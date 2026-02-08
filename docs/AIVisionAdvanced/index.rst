@@ -2,8 +2,6 @@ ICreateRobot AI Vision Sensor - Advanced
 ========================
 
 .. toctree::
-   :maxdepth: 6
-   :glob:
   
 
   01Introduction.md
