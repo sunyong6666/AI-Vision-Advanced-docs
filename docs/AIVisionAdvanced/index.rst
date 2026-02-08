@@ -10,4 +10,4 @@ ICreateRobot AI Vision Sensor - Advanced
   04ModeSelection/index
   05CommunicationProtocol/index
   06FirmwareFlashing.md
-  
+  07SupportedDevices/index
