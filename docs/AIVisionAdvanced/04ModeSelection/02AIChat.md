@@ -6,14 +6,14 @@
 
 2. **<font style="color:rgba(0, 0, 0, 0.9);">Interface Explanation for Dialogue Mode States  </font>**
 
-**（1）Network Configuration  **
+**（1）Network Configuration**
 
 The following image shows the sensor during the network configuration state.
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/AI1.png)
 
-| No. | ** Name** | ** Description** |
+| No. | **Name** | **Description** |
 | :---: | :---: | :---: |
 | ① |  Configuring Network   |  Displays that the sensor is in network configuration state. |
 | ② |  Connecting to Hotspot |  Displays the hotspot the sensor is trying to connect to. |
@@ -34,27 +34,27 @@ The following image shows the <font style="color:rgba(0, 0, 0, 0.9);">vision sen
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/AI3.png)
 
-| No. | ** Name** | ** Description** |
+| No. | **Name** | **Description** |
 | :---: | :---: | :---: |
 | ① |  Standby |  Displays that the <font style="color:rgba(0, 0, 0, 0.9);">vision sensor</font> is in standby mode.   |
 | ② |  Volume |  Displays the volume, which can be adjusted by rotating the dial button left or right, or through interaction with XiaoZhi. |
 
 
-**（4）Listening  **
+**（4）Listening**
 
 The following image shows the <font style="color:rgba(0, 0, 0, 0.9);">vision sensor</font> in listening mode.  
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/AI4.png)
 
-**（5）Speaking  **
+**（5）Speaking**
 
 The following image shows the <font style="color:rgba(0, 0, 0, 0.9);">vision sensor</font> in speaking mode.  
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/AI5.png)
 
-| No. | ** Name** | ** Description** |
+| No. | **Name** | **Description** |
 | :---: | :---: | :---: |
 | ① |  Speaking |  Displays that the K210 module is in answering mode. |
 | ② |  Dialogue Box | Displays the conversation information. |
@@ -107,11 +107,11 @@ First-time use requires registration with a phone number, otherwise you won't be
 
  **Recommendations:**
 
-**Step 1: **Register an account in the backend, and wait for the verification code screen. For detailed steps, refer to the "**Backend Registration**" section below.
+**Step 1:** Register an account in the backend, and wait for the verification code screen. For detailed steps, refer to the "**Backend Registration**" section below.
 
 **Step 2:** Switch the AI vision snesor to AI Chat mode and wait for the sensor to broadcast the verification code. For detailed steps, refer to the "Network Configuration" section.  
 
-**Step 3: **Enter the broadcasted verification code in the backend for device connection.
+**Step 3:** Enter the broadcasted verification code in the backend for device connection.
 
 ### Network Configuration Steps  
 | <!-- 这是一张图片，ocr 内容为： -->
