@@ -107,7 +107,7 @@ After making changes in the settings interface, you must click **Exit** to save 
 >
 
 ##### Flashing  
- The **Type-C interface** on the side of the module supports both firmware flashing and power supply functions.  [Flashing](https://icreate-help-center.yuque.com/dxifg8/isnecf/ezic46bzqtiducs0?singleDoc#%20《烧录》)
+ The **Type-C interface** on the side of the module supports both firmware flashing and power supply functions.  [Flashing](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/06FirmwareFlashing.html)
 
 ### Usage Instructions  
 #### Connection Method  
