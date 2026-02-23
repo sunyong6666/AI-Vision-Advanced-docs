@@ -43,7 +43,7 @@ _**<font style="color:#DF2A3F;"></font>**_
 #### Downloading Files
 Visit [GitHub](https://github.com/cyc36880/microbit_micropython_k210.git) to download the Python driver files.
 
-For users in Mainland China, visit [Gitee](https://gitee.com/cyc36880/microbit_python.git).
+For users in Mainland China, visit [Gitee](https://github.com/cyc36880/microbit_micropython.git).
 
 1. Choose a hosting platform and select the release version (download the latest version if unsure).
 
