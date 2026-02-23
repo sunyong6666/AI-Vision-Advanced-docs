@@ -2,7 +2,7 @@
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/D1.png)
 
-+ Supports learning of up to **2 target categories**, with** 2 images** required per category.
++ Supports learning of up to **2 target categories**, with**2 images** required per category.
 + Press the button to start learning the current category. The current category number will be displayed in the top left corner, and the number of images taken will be shown in the top right corner.
 + If no further button presses are made within 5 seconds after learning category 0, the system will automatically switch to recognition mode.
 + After reaching the maximum number of categories for learning, either a 5-second wait or pressing the button will also switch to recognition mode.  
