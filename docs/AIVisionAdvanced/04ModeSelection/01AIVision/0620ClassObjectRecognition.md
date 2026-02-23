@@ -8,7 +8,7 @@
 >
 
 + When the sensor is aimed at one of the listed objects, the recognition result will be displayed on the screen with a bounding box and the corresponding object name.
-+ Supports recognition of up to** 4 target objects** simultaneously.
++ Supports recognition of up to**4 target objects** simultaneously.
 
 Demonstration:
 
