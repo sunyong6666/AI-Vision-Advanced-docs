@@ -7,18 +7,21 @@ LEGO® MINDSTORMS® EV3 is the third-generation programmable robotics kit in the
 
 ## Quick Start
 ### Hardware Preparation
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E2.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E3.png) |
-| :---: | :---: |
-| EV3 Controller | K210 AI Vision Sensor |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E4.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E5.png) |
-| Adapter Board | Grove Male-to-Male Cable |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E6.png) |  |
-| EV3 Connection Cable |  |
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E2.png) 
+EV3 Controller 
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E3.png) 
+K210 AI Vision Sensor 
+ <!-- 这是一张图片，ocr 内容为： -->
+![](img/E4.png) 
+Adapter Board
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E5.png) 
+Grove Male-to-Male Cable 
+ <!-- 这是一张图片，ocr 内容为： -->
+![](img/E6.png)   
+EV3 Connection Cable 
 
 
 ### Software Preparation
