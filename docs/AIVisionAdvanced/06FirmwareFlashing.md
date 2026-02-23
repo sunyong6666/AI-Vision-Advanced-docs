@@ -52,7 +52,7 @@ Unzip the downloaded compressed file, and the folder will contain only one execu
 ![](img/F6.png)
 
 ## ESP32 Flashing  
-**The onboard chip is ESP32-S3FN8. You can program and flash it using Arduino or the official Espressif tools.  **
+**The onboard chip is ESP32-S3FN8. You can program and flash it using Arduino or the official Espressif tools.**
 
 1. Configuration Program:
 
