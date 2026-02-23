@@ -9,7 +9,7 @@ This sensor adopts the K210 as its AI processing core. Users can switch between 
 ## Structure
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/I2.png)
-| **No.** | **Component** | **Description  ** |
+| **No.** | **Component** | **Description** |
 | :---: | :---: | :---: |
 | ① | LCD Display | Displays the UI interface and camera view |
 | ② | USB-C Port | For power supply and firmware updates |
