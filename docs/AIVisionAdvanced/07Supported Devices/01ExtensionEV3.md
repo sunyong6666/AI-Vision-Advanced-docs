@@ -276,4 +276,81 @@ Press the right button on the EV3 controller to turn ON the fill light again.
 Due to the I²C communication mechanism of EV3, in certain modes, if data is read immediately without an appropriate delay, the retrieved values may be inaccurate.
 
 Therefore, when reading data in these modes, it is recommended to add a delay of about 0.2 seconds to ensure stable communication and obtain correct sensor values.
+## AI Chat
+## <!-- 这是一张图片，ocr 内容为： -->
+![](img/E38.png)
+## <!-- 这是一张图片，ocr 内容为： -->
+![](img/E39.png)
+When starting to use, network configuration is required, and the registration code must be registered with XiaoZhi. For detailed operations, please refer to the Dialogue Mode document under the Mode Selection section.  
 
+### Get Dialogue Status  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E40.png)
+
+The status of the AI dialogue output on the screen is as follows:  
+0: AI not started  
+1: Connecting  
+2: Idle  
+3: Listening  
+4: Speaking  
+5: Network configuration in progress  
+
+### Get Custom Command
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E41.png)
+
+Output the executed custom command to the screen. For usage, please refer to the description of custom commands in the Dialogue Mode document under Mode Selection.
+
+### Get Motion Command
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E42.png)
+
+Control movement via voice for forward, backward, left turn, or right turn, and output the corresponding number to the screen.  
+Motion command values:  
+1: Forward  
+2: Backward  
+3: Left Turn  
+4: Right Turn  
+5: Stop
+
+### Get Motion Speed
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E43.png)
+
+Control movement speed via voice and output the required speed to the screen.  
+Motion speed range: 0 ~ 100  
+
+## WIFI Stream
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E44.png)
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E45.png)
+
+When starting to use, network configuration is required for the device. For detailed operations, please refer to the Wi-Fi transmission document under Mode Selection.
+
+### Get Web Button Value
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E46.png)
+
+Get the value of the button pressed in the webpage and output it to the screen. A byte is returned, with each button corresponding to a specific bit position in the byte: 0012 3456. When a button is pressed, the corresponding bit is set to 1.  
+
+### Get Keyboard Key Value  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E47.png)
+
+Get the value of the pressed keys (WASD) on the keyboard and output it to the screen. A byte is returned, with each key corresponding to a specific bit position in the byte: 0000 WASD. When a key is pressed, the corresponding bit is set to 1  
+
+### Get Joystick Values
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E48.png)
+
+Get the value of the joystick in the X direction and output it to the screen. The range is -100 to 100.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/E49.png)
+
+Get the value of the joystick in the Y direction and output it to the screen. The range is -100 to 100.
+
+## Notes
+Due to the I²C communication mechanism of the EV3, in some modes, if data is read without appropriate delay, the values obtained may be inaccurate. Therefore, when reading data in these modes, it is recommended to add a delay of about 0.2 seconds to ensure stable communication and accurate sensor values.  
