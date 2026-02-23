@@ -6,12 +6,11 @@
 + <font style="color:rgba(0, 0, 0, 0.85) !important;">The vision sensor requires an external device for power supply.</font>
 + <font style="color:rgba(0, 0, 0, 0.85) !important;">The external device can be connected via USB or the Grove port, providing 5V–1A power to the sensor.</font>
 
-** Demonstration:**
+**Demonstration:**
 
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q1.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q2.png) |
-| :---: | :---: |
 | Computer USB power supply | ICBricks 2.0 main controller power supply |
 
 
