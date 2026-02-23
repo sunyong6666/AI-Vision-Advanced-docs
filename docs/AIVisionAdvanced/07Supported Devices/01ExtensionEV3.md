@@ -272,10 +272,7 @@ Press the left button on the EV3 controller to turn OFF the fill light.
 
 Press the right button on the EV3 controller to turn ON the fill light again.
 
-## Notes
-Due to the I²C communication mechanism of EV3, in certain modes, if data is read immediately without an appropriate delay, the retrieved values may be inaccurate.
 
-Therefore, when reading data in these modes, it is recommended to add a delay of about 0.2 seconds to ensure stable communication and obtain correct sensor values.
 ## AI Chat
 ## <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E38.png)
