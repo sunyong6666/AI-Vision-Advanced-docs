@@ -3,8 +3,8 @@
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/C1.png)
 
-+ **I²C Mode: **`GND`、`VCC`、`SDA`、`SCL` (from left to right)
-+ **UART Mode: **`GND`、`VCC`、`RX`、`TX` (from left to right)
++ **I²C Mode:** `GND`、`VCC`、`SDA`、`SCL` (from left to right)
++ **UART Mode:** `GND`、`VCC`、`RX`、`TX` (from left to right)
 
 ## Communication Description
 The module supports the following communication methods:
