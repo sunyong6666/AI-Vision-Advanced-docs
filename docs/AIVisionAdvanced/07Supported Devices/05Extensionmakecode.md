@@ -13,7 +13,7 @@ On the right side of the module, there is a Grove multifunctional interface, whi
 
 <font style="color:#DF2A3F;">It is recommended to use the micro:bit V2.0 or higher versions as the main control board. Lower versions have insufficient memory, which may cause issues with functionality.</font>
 
-The extension file used for MakeCode is [AI Vision_micro:bit_V0.1.0.hex](https://www.icrobot.com/www/cn/index.html#/file/index). It is recommended to download it in advance.
+The extension file used for MakeCode is [AI Vision_micro:bit_V0.1.0.hex](https://github.com/ICreateRobot/AI-Vision-Sensor-). It is recommended to download it in advance.
 
 ### Function Introduction  
 The **Vision Sensor** can be powered and operated through its two interfaces (HY2.0-4P / Type-C). The **micro:bit** can use the **HY2.0-4P interface** for both power supply and communication with the vision module.
