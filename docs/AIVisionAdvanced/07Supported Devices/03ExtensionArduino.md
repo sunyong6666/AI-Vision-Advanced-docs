@@ -100,7 +100,7 @@ Step 5: Demo Effect
 + The K210 Vision Sensor will recognize objects and label them with their names and position information.
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar18.gif)
+![](img/Ar18.png)
 
 
 
@@ -111,8 +111,10 @@ card_id maps to the object names (see the figure on the right).
 position contains the bounding box: X, Y, W, H.
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar19.png)<!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar20.png)<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar19.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar20.png)
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar21.png)
 
 ## API
