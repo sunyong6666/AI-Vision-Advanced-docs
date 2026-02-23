@@ -133,7 +133,7 @@ Print the generated tag and ensure good lighting and focus during testing.
 
 + QR code generation (QR Code Recognition)
 
-Use any standard QR code generator [website](https://cli.im/) or tool.
+Use any standard QR code generator or tool.
 
 Enter the text/content to be encoded and click Generate.
 
