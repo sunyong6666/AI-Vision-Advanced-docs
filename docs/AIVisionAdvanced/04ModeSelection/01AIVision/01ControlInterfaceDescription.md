@@ -5,7 +5,7 @@ Each AI function in the Vision Mode corresponds to an independent interface. Use
 + Once you enter a specific interface, the corresponding AI function will be automatically enabled.
 + If an AI function includes additional steps (such as "select" or "learn"), press the dial button for more detailed control (specific operations depend on the current function).
 
-_**Note: The images shown are for reference only. The actual display may vary depending on the module.  **_
+_**Note: The images shown are for reference only. The actual display may vary depending on the module.**_
 
 ## **Top Status Bar & Bottom Navigation Bar**
 <!-- 这是一张图片，ocr 内容为： -->
