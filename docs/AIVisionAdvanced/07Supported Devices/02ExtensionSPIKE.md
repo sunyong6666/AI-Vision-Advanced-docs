@@ -80,7 +80,7 @@ You can enter the [LEGO SPIKE](https://spike.legoeducation.com/) programming pag
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP14.png)
 
-### Usage Example
+### Usage Example 1
 Connect the vision module to Port A of the SPIKE hub and manually switch it to Tag Recognition Mode.
 
 If no tag is detected, the SPIKE matrix display shows N.
@@ -95,7 +95,34 @@ Demonstration:
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP16.gif)
 
+### Usage Example 2
+Connect the AI vision module to the SPIKE E port and the motor to the SPIKE B or D port (without corresponding port connections).
 
+When you say "move forward": if the reflection value is "1%", the motor will rotate clockwise.
+
+When you say "move backward": if the reflection value is "2%", the motor will rotate counterclockwise.
+
+The default reflection value is "5%", which will stop the motor.
+
+  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP17.png)
+
+Demonstration:
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP18.gif)
+
+### Usage Example 3
+Connect the vision module to the SPIKE C port, and display the collected values on the hub through the image transmission button.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP19.png)
+
+Demonstration:
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP20.gif)
 
 ## Usage Instructions  
 Since the vision module emulates a color sensor, it is read-only. This means that you can only use the built-in color sensor blocks in SPIKE to read values from the vision module. Mode switching must be done manually on the vision module itself.
@@ -107,14 +134,14 @@ The output values of the vision module in different modes correspond directly to
 After completing the above steps, connect the vision module to the SPIKE Prime hub. The hub will detect the module as a color sensor, as shown in the figure below:
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP101.png)
+![](img/SP21.png)
 
 ### Color Recognition
 1. Switch the vision module to Color Recognition Mode.
 2. Read the R value of the detected color from the vision module and display it on the SPIKE Prime hub.
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP15.png)
+![](img/SP22.png)
 
 
 
