@@ -130,7 +130,7 @@ The process is similar to single file import. (See demo GIF for details.)
 2. Use a Grove cable to connect the micro:bit with the vision module.
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC17.jpeg)
+![](img/MIC17.jpg)
 
 
 
@@ -192,7 +192,7 @@ Follow the library import steps. In addition to the required libraries, import s
 Connect the micro:bit to the six-way grayscale module using a Grove cable.
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC21.jpeg)
+![](img/MIC21.jpg)
 
 
 
