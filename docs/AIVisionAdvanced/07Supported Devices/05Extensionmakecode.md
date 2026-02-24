@@ -1,4 +1,4 @@
-# Supported Devices
+# Extension-make:code
 ## MakeCode Usage Instructions  
 The **AI Vision Module** can be used with the **micro:bit** kit. For a quick start with the MakeCode programming platform, refer to the **User Guide** document.  
 
