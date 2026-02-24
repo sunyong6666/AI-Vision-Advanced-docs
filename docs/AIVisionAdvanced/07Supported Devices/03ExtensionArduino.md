@@ -93,4 +93,159 @@ Step 5: Demo Effect
 
 + The K210 Vision Sensor will recognize objects and label them with their names and position information.
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar18.png)
+![](img/Ar18.gif)
++ Additionally, print the object name and position information to the serial monitor.
+
+card_id maps to the object names (see the figure on the right).
+
+position contains the bounding box: X, Y, W, H.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar19.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar20.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar21.png)
+## API
+The API is used to operate the Vision Module. Communication with the module follows a specified protocol and requires basic data handling. By using the API, you can abstract away low-level operations and simplify your application logic.
+
+(The examples below take an ESP32 development board as the target platform.)
+
+### Usage Notes  
++ AprilTag generation (Tag Recognition)
+
+You can generate tags using an online [AprilTag generator](https://chaitanyantr.github.io/apriltag.html).
+
+Set Tag Family to`TAG36H11` (this is the family used by the Vision Module).
+
+Set Tag ID as needed (typical range: 0–200).
+
+Print the generated tag and ensure good lighting and focus during testing.
+
++ QR code generation (QR Code Recognition)
+
+Use any standard QR code generator or tool.
+
+Enter the text/content to be encoded and click Generate.
+
+Ensure sufficient print quality and size so the module can decode reliably.
+
+### Class: AiCamera
+The AiCamera class is the fundamental object used to operate the AI Vision Module.
+
+#### Constructor
+```cpp
+class AiCamera(uint8_t addr=0x24)
+```
+
+Creates an AiCamera object.
+
+Parameters:
+
+`addr`→ The I²C address of the Vision Module.
+
+Default value: 0x24
+
+Since the AI Vision Module typically uses a single address, the default setting is usually sufficient.
+#### Parameter Macros
+```cpp
+enum Register
+{
+    AI_CAMERA_COLOR,            // color detection
+    AI_CAMERA_PATCH,            // color block tracking
+    AI_CAMERA_TAG,              // AprilTag recognition
+    AI_CAMERA_LINE,             // line recognition
+    AI_CAMERA_20_CLASS,         // 20-class object recognition
+    AI_CAMERA_QRCODE,           // QR code recognition
+    AI_CAMERA_FACE_ATTRIBUTE,   // face attributes
+    AI_CAMERA_FACE_RE,          // face recognition
+    AI_CAMERA_DEEP_LEARN,       // deep learning
+    AI_CAMERA_CARD,             // road sign recognition
+    AI_CAMERA_WIFI_SERVER,      // wifi stream
+};
+enum Color
+{
+    AI_CAMERA_COLOR_RED,     // red
+    AI_CAMERA_COLOR_GREEN,   // green
+    AI_CAMERA_COLOR_BLUE,    // blue
+    AI_CAMERA_COLOR_YELLOW,  // yellow
+    AI_CAMERA_COLOR_BLACK,   // black
+    AI_CAMERA_COLOR_WHITE,   // white
+};
+
+```
+
++ These macros are used when switching modes, reading/writing data in a specific mode, and configuring color settings of the Vision Module.
+
+#### Function
+##### Init
++ Init(int sda=-1, int scl=-1)
+
+Description:
+
+Initializes the AI Vision Module over the I²C interface.
+
+**Parameters:**
+
++ sda → I²C data line (SDA).
+
+Default: -1 (use the board’s default SDA pin).
+
++ scl → I²C clock line (SCL).
+
+Default: -1 (use the board’s default SCL pin).
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    ai_camrea_handle.Init();   // Initialize
+}
+
+void loop()
+{
+}
+```
+
+##### begin
++ begin(int sda=-1, int scl=-1)
+
+> ##### Use the same style as Init to define this function, in order to keep it consistent with the Arduino coding style.
+
+##### set_sys_mode
++ set_sys_mode(uint8_t mode);
+
+Set the working mode of the AI visual module.
+
+**Parameter ：**
+
++ mode – Operating Mode
+    - Refer to Parameter Macros.
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+     ai_camrea_handle.Init();   // Initialize
+    // Set the mode to QR code recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_QRCODE); 
+}
+
+void loop()
+{
+}
+```
