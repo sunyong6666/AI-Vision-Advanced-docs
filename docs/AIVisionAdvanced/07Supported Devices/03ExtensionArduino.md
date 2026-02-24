@@ -351,3 +351,96 @@ void loop()
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar24.gif)
+In the center of the visual module is a white rectangular box, which is used for color extraction.
+
+Below the white box, the screen displays the extracted RGB value in real time, which is consistent with the result of serial port printing output.
+
+##### get_color_rgb
++ get_color_rgb(int &r, int &g, int &b)
+
+
+
+**Parameters:**
+
++ r → Reference to an integer storing the Red value
++ g → Reference to an integer storing the Green value
++ b → Reference to an integer storing the Blue value
+
+
+
+** Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color detection mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_COLOR); 
+    delay(1000);                    // Wait for mode switch to complete
+
+void loop()
+{
+    int r, g, b; // 
+    ai_camrea_handle.get_color_rgb(r, g, b); // Variables to store RGB values
+    Serial.print("rgb:(");
+    Serial.print(r);
+    Serial.print(" ");
+    Serial.print(g);
+    Serial.print(" ");
+    Serial.print(b);
+    Serial.println(")");
+
+    delay(400);
+}
+```
+
+> Use the reference to the previous function of the same name
+>
+
+##### set_find_color
++ set_find_color(uint8_t color_id)
+
+Sets the target color for Color Block Tracking mode.
+
+**Parameters:**
+
++ color_id →The color to be tracked. Options:
+    - AI_CAMERA_COLOR_RED      // Red
+    - AI_CAMERA_COLOR_GREEN //  Green  
+    - AI_CAMERA_COLOR_BLUE    //  Blue  
+    - AI_CAMERA_COLOR_YELLOW // Yellow
+    - AI_CAMERA_COLOR_BLACK   //  Black  
+    - AI_CAMERA_COLOR_WHITE  // White
+
+** Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color blob tracking mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_PATCH); 
+    delay(1000);                    // Wait for mode switch to complete
+    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// Set to track the color green
+}
+
+void loop()
+{
+}
+```
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar25.gif)
