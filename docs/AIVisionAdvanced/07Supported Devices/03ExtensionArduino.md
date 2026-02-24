@@ -163,27 +163,29 @@ Since the AI Vision Module typically uses a single address, the default setting 
 ```cpp
 enum Register
 {
-    AI_CAMERA_COLOR,            // 颜色获取
-    AI_CAMERA_PATCH,            // 色块追踪
-    AI_CAMERA_TAG,              // 标签识别
-    AI_CAMERA_LINE,             // 线条识别
-    AI_CAMERA_20_CLASS,         // 20类物体识别
-    AI_CAMERA_QRCODE,           // 二维码识别
-    AI_CAMERA_FACE_ATTRIBUTE,   // 人脸属性
-    AI_CAMERA_FACE_RE,          // 人脸识别
-    AI_CAMERA_DEEP_LEARN,       // 深度学习
-    AI_CAMERA_CARD,             // 卡片识别
-    AI_CAMERA_WIFI_SERVER,      // 无线图传
+    AI_CAMERA_COLOR,            // color detection
+    AI_CAMERA_PATCH,            // color block tracking
+    AI_CAMERA_TAG,              // AprilTag recognition
+    AI_CAMERA_LINE,             // line recognition
+    AI_CAMERA_20_CLASS,         // 20-class object recognition
+    AI_CAMERA_QRCODE,           // QR code recognition
+    AI_CAMERA_FACE_ATTRIBUTE,   // face attributes
+    AI_CAMERA_FACE_RE,          // face recognition
+    AI_CAMERA_DEEP_LEARN,       // deep learning
+    AI_CAMERA_CARD,             // road sign recognition
+    AI_CAMERA_WIFI_SERVER,      // wifi stream
 };
+
 enum Color
 {
-    AI_CAMERA_COLOR_RED,     // 红色
-    AI_CAMERA_COLOR_GREEN,   // 绿色
-    AI_CAMERA_COLOR_BLUE,    // 蓝色
-    AI_CAMERA_COLOR_YELLOW,  // 黄色
-    AI_CAMERA_COLOR_BLACK,   // 黑色
-    AI_CAMERA_COLOR_WHITE,   // 白色
+    AI_CAMERA_COLOR_RED,     // red
+    AI_CAMERA_COLOR_GREEN,   // green
+    AI_CAMERA_COLOR_BLUE,    // blue
+    AI_CAMERA_COLOR_YELLOW,  // yellow
+    AI_CAMERA_COLOR_BLACK,   // black
+    AI_CAMERA_COLOR_WHITE,   // white
 };
+
 ```
 
 + These macros are used when switching modes, reading/writing data in a specific mode, and configuring color settings of the Vision Module.
@@ -209,16 +211,15 @@ Default: -1 (use the board’s default SCL pin).
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    ai_camrea_handle.Init();   // 初始化
+    ai_camrea_handle.Init();   // Initialize
 }
 
 void loop()
@@ -244,17 +245,16 @@ Set the working mode of the AI visual module.
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    ai_camrea_handle.Init();   // 初始化
-    // 设置模式为二维码识别模式
+     ai_camrea_handle.Init();   // Initialize
+    // Set the mode to QR code recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_QRCODE); 
 }
 
@@ -283,33 +283,32 @@ AI_CAMERA_COLOR ~ AI_CAMERA_CARD
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
 }
 
 void loop()
 {
-    int get_mode = ai_camrea_handle.get_sys_mode(); // 获取系统模式
+     int get_mode = ai_camrea_handle.get_sys_mode(); // Get system mode
     if (get_mode == AI_CAMERA_TAG)
     {
-        Serial.println("处于标签识别模式");
+        Serial.println("In tag recognition mode");
     }
     else if (get_mode == AI_CAMERA_FACE_ATTRIBUTE)
     {
-        Serial.println("处于人脸检测模式");
+        Serial.println("In face detection mode");
     }
     else
     {
-        Serial.println("其它模式");
+        Serial.println("Other mode");
     }
     delay(400);
 }
@@ -334,26 +333,26 @@ Retrieves the RGB values from the Color Recognition mode.
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到颜色获取模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color detection mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_COLOR); 
-    delay(1000);                    // 等待切换完成
+    delay(1000);                    // Wait for mode switch to complete
 }
 
 void loop()
 {
-    int rgb[3] = {0}; // rgb数组数据缓冲区
-    ai_camrea_handle.get_color_rgb(rgb); // 获取rgb数据
+    int rgb[3] = {0}; //RGB array data buffer
+
+    ai_camrea_handle.get_color_rgb(rgb); // Get RGB data
     Serial.print("rgb:(");
     Serial.print(rgb[0]);
     Serial.print(" ");
@@ -389,26 +388,24 @@ Below the white box, the screen displays the extracted RGB value in real time, w
 ** Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到颜色获取模式
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color detection mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_COLOR); 
-    delay(1000);                    // 等待切换完成
-}
+    delay(1000);                    // Wait for mode switch to complete
 
 void loop()
 {
     int r, g, b; // 
-    ai_camrea_handle.get_color_rgb(r, g, b); // 获取rgb数据
+    ai_camrea_handle.get_color_rgb(r, g, b); // Variables to store RGB values
     Serial.print("rgb:(");
     Serial.print(r);
     Serial.print(" ");
@@ -442,21 +439,20 @@ Sets the target color for Color Block Tracking mode.
 ** Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到色块追踪模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color blob tracking mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_PATCH); 
-    delay(1000);                    // 等待切换完成
-    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// 设置追踪绿色
+    delay(1000);                    // Wait for mode switch to complete
+    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// Set to track the color green
 }
 
 void loop()
@@ -484,20 +480,20 @@ Trigger Face Recognition Learning
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到人脸识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to face recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_FACE_RE); 
-    delay(1000);                    // 等待切换完成
-    ai_camrea_handle.face_study();  // 人脸学习
+    delay(1000);                    // Wait for mode switch to complete
+    ai_camrea_handle.face_study();  // Face learning
 }
 
 void loop()
@@ -523,21 +519,20 @@ Make deep recognition learning
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到深度识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to deep learning mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_DEEP_LEARN); 
-    delay(1000);                          // 等待切换完成
-    ai_camrea_handle.deep_learn_study();  // 深度学习
+    delay(1000);                          // Wait for mode switch to complete
+    ai_camrea_handle.deep_learn_study();  // Deep learning study
 }
 
 void loop()
@@ -567,26 +562,26 @@ Obtain face attributes
 **Example:**
 
 ```cpp
-#include <Arduino.h>    // 引入 Arduino 头文件
-#include "ai_camera.h"  // 引入 ai视觉模块的库头文件
+#include <Arduino.h>    // Include Arduino header file
+#include "ai_camera.h"  // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup() 
 {
-    Serial.begin(115200); // 初始化串口
-    ai_camrea_handle.begin();    // 初始化
-    ai_camrea_handle.set_sys_mode(AI_CAMERA_FACE_ATTRIBUTE); // 设置模式为人脸属性识别模式
-    delay(1000); // 等待切换完成
+    Serial.begin(115200); // Initialize serial communication
+    ai_camrea_handle.begin();    // Initialize
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_FACE_ATTRIBUTE); // Set mode to face attribute recognition mode
+    delay(1000); // Wait for mode switch to complete
 }
 
 void loop() 
 {
-    // 判断是否找到人脸
+    // Check if a face is detected
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_FACE_ATTRIBUTE) > 0)
     {
-        // 获取人脸属性
+        //Get face attributes
         int is_male, is_mouth_open, is_smail, is_glasses;
         ai_camrea_handle.get_face_attributes(is_male, is_mouth_open, is_smail, is_glasses);
         Serial.print("is_male: ");
@@ -659,26 +654,25 @@ Returns the number of objects recognized.
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到色块追踪模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color patch tracking mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_PATCH); 
-    delay(1000);                          // 等待切换完成
-    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// 设置追踪绿色
+    delay(1000);                          // Wait for mode switch to complete
+    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// Set to track the color green
 }
 
 void loop()
 {
-    // 判断是否找到色块
+    // Check if a color patch is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_PATCH) > 0)
     {
         Serial.println("find patch");
@@ -719,27 +713,27 @@ Returns a string (std::string type).
 A QR code with the content "hello".
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到二维码识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to QR code recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_QRCODE); 
-    delay(1000);              // 等待切换完成
+    delay(1000);              // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到二维码
+    // Check if a QR code is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_QRCODE) > 0)
     {
-        // 获取二维码内容
+        //  Get QR code content
         std::string qrcode_content = ai_camrea_handle.get_qrcode_content(); 
         Serial.print("qrocde content: ");
         Serial.println(qrcode_content);
@@ -822,18 +816,18 @@ Meaning depends on the selected mode (see explanation above).
 <font style="color:rgb(38, 38, 38);">Example 1: Judge the Recognized Tag ID</font>
 
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar31.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar32.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar33.png?x-oss-process=image%2Fformat%2Cwebp) |
+![](img/Ar31.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar32.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar33.png) |
 | --- | --- | --- |
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar34.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar35.pngg?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar36.png?x-oss-process=image%2Fformat%2Cwebp) |
+![](img/Ar34.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar35.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar36.png) |
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar37.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar38.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar39.png?x-oss-process=image%2Fformat%2Cwebp) |
+![](img/Ar37.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar38.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar39.png) |
 
 
 <font style="color:rgb(38, 38, 38);">ID tags from 0 to 8.</font>
@@ -841,27 +835,27 @@ Meaning depends on the selected mode (see explanation above).
 <font style="color:rgb(38, 38, 38);"></font>
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到标签识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
-    delay(1000);               // 等待切换完成
+    delay(1000);               // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到标签
+    // Check if a tag is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
     {
-        // 获取标签id
+        // Get tag ID
         int target_id = ai_camrea_handle.get_identify_id(AI_CAMERA_TAG);
         Serial.print("tag id: ");
         Serial.println(target_id);
@@ -894,36 +888,35 @@ When the visual module does not recognize the tag, it prints "no find tag" on th
 <font style="color:rgb(38, 38, 38);"></font>
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
-
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到20类物体识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to 20-class object recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_20_CLASS); 
-    delay(1000);               // 等待切换完成
+    delay(1000);               // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到20类物体
+     // Check if any of the 20-class objects are found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_20_CLASS) > 0)
     {
-        // 获取20类物体id
+        // Get the ID of the 20-class object
         uint8_t target_id = ai_camrea_handle.get_identify_id(AI_CAMERA_20_CLASS);
         if (target_id == 1)
         {
-            Serial.println("识别到自行车");
+            Serial.println("Bicycle detected");
         }
         else
         {
-            Serial.println("其他物体");
+            Serial.println("Other object");
         }
     }
     else
@@ -965,30 +958,30 @@ Get the rotation Angle of the object being identified
 **Example:**
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar45.gif)
+![](img/Ar44.png)
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到标签识别模式
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
-    delay(1000);               // 等待切换完成
+    delay(1000);               // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到标签
+    // Check if a tag is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
     {
-        // 获取标签旋转角度
+        // Get the tag's rotation angle
         int rot = ai_camrea_handle.get_identify_rotation(AI_CAMERA_TAG);
         Serial.print("rot: ");
         Serial.println(rot);
@@ -1002,7 +995,7 @@ void loop()
 ```
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar46.png)
+![](img/Ar45.gif)
 
 <font style="color:rgb(38, 38, 38);">When the visual module recognizes the tag, rotate the visual module and print the Angle of the tag relative to the visual module through the serial port. If the tag is not recognized, print "no find tag" through the serial port.</font>
 
@@ -1017,7 +1010,7 @@ void loop()
 <font style="color:rgb(38, 38, 38);"></font>
 
 **Parameter:**<!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar47.gif)
+![](img/Ar46.png)
 
 + <font style="color:rgb(38, 38, 38);">features → Feature selection</font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color Block Tracking</font>
@@ -1041,32 +1034,32 @@ void loop()
 **Example**
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar48.gif)
+![](img/Ar47.gif)
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到标签识别模式
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
-    delay(1000);               // 等待切换完成
+    delay(1000);               // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到标签
+    //  Check if a tag is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
     {
-        // 位置缓冲区
+        // Position buffer
         int position[4] = {0};
-        // 获取位置
+        // Get position
         ai_camrea_handle.get_identify_position(AI_CAMERA_TAG, position);
         Serial.print("x y w h:(");
         Serial.print(position[0]);
@@ -1079,14 +1072,14 @@ void loop()
         Serial.println(")");
         
         
-        int pos_x = position[0]; // 得到x坐标
+        int pos_x = position[0]; // Get x-coordinate
         if (pos_x > 170)
         {
-            Serial.println("位置偏右");
+            Serial.println("position shifted to the left");
         }
         else
         {
-            Serial.println("位置偏左");
+            Serial.println("position shifted to the right");
         }
     }
     else
@@ -1098,7 +1091,7 @@ void loop()
 ```
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar49.gif)
+![](img/Ar48.gif)
 
 <font style="color:rgb(38, 38, 38);">When the vision module recognizes a tag, the serial monitor prints the tag’s coordinates.</font>
 
@@ -1113,7 +1106,7 @@ void loop()
 
 
 
-**参数:**
+**Parameter:**
 
 + features → Feature selection
     - AI_CAMERA_PATCH            //<font style="color:rgb(38, 38, 38);">Color Block Tracking</font>
@@ -1136,29 +1129,29 @@ void loop()
 **<font style="color:rgb(38, 38, 38);">Example</font>**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
 
-// 设置 ai 视觉模块操作句柄
+// Set up ai vision module operation handle
 AiCamera ai_camrea_handle;
 
 void setup()
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 切换模式到标签识别模式
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
     ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
-    delay(1000);               // 等待切换完成
+    delay(1000);               // Wait for mode switch to complete
 }
 
 void loop()
 {
-    // 判读是否找到标签
+    // Check if a tag is found
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
     {
-        // 位置缓冲区
+        // Position buffer
         int x, y, w, h;
-        // 获取位置
+        // Get position
         ai_camrea_handle.get_identify_position(AI_CAMERA_TAG, x, y, w, h);
         Serial.print("x y w h:(");
         Serial.print(x);
@@ -1174,11 +1167,11 @@ void loop()
         int pos_x = x; 
         if (pos_x > 170)
         {
-            Serial.println("位置偏右");
+            Serial.println("Position shifted to the right");
         }
         else
         {
-            Serial.println("位置偏左");
+            Serial.println("Position shifted to the left");
         }
     }
     else
@@ -1190,198 +1183,295 @@ void loop()
 ```
 
 > Recognition effect, refer to the previous function of the same name
->
+> 
+##### get_ai_chat_run_state
++ get_ai_chat_run_state(uint8_t &command, uint8_t &speed)
 
-##### set_wifi_server_is_scan_qrcode
-+ set_wifi_server_is_scan_qrcode(bool is_scan)
+Gets the motion command and speed in the AI dialogue.  
 
-Set whether to connect to Wi-Fi using QR code scanning. This must be configured before entering the Wi-Fi transmission mode.
-
-
-
-**Parameters:  **
-
-+ is_scan Whether to connect via QR code scanning
-    - **1** = Yes；**0** = No
-
-
-
-**Example:**
+**Parameters:**
++ **command** Motion command  
+○ Value range:  
+1: Forward,  
+2: Backward,  
+3: Left turn,  
+4: Right turn,  
+5: Stop  
++ **speed** Motion speed  
+○ Value range: 0 ~ 100  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar49.gif)
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>
+#include "ai_camera.h"
 
-// 设置 ai 视觉模块操作句柄
-AiCamera ai_camrea_handle;
+// Set up ai vision module operation handle
+AiCamera ai_camera;
 
-void setup()
+void setup(void)
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-
-     // 设置通过扫描二维码连接wifi
-    ai_camrea_handle.set_wifi_server_is_scan_qrcode(1);
-    
-    // 切换至无线图传
-    ai_camrea_handle.set_sys_mode(AI_CAMERA_WIFI_SERVER); 
-    delay(1000);               // 等待切换完成
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
 }
-void loop()
+
+void loop(void)
 {
-    String ssid, password; // 定义 ssid password
-    //获取连接到的wifi的ssid password
-    ai_camrea_handle.get_wifi_server_ssid_passward(ssid, password);
-    Serial.print("ssid: ");
-    Serial.print(ssid);
-    Serial.print(", password: ");
-    Serial.println(password);
-    Serial.print("ip: ");
-    Serial.println(ai_camrea_handle.get_wifi_server_ip()); // 获取连接连接到的ip地址
-    delay(400);
+    char buffer[128];
+    uint8_t command, speed;
+
+    ai_camera.get_ai_chat_run_state(command, speed);      // Get motion state
+
+    sprintf(buffer, "command:%d, speed:%d", command, speed);
+    Serial.println(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
 }
 ```
+##### get_ai_chat_custom_command
++ get_ai_chat_custom_command(uint8_t &command)
 
-##### get_wifi_server_ssid_passward
-+ get_wifi_server_ssid_passward(String &ssid, String &password)
-
-Get the SSID and password of the connected wifi
+Get executed custom commands.
 
 
 
 **Parameters:**
 
-+ ssid Wi-Fi SSID, reference to a String-type variable
-
-> Supports any name, with no language restriction. However, the total length is generally recommended not to exceed 20 characters.
->
-
-+ password Wi-Fi password, reference to a String-type variable
-
-> Supports any name, with no language restriction. However, the total length is generally recommended not to exceed 20 characters.
->
-
-
-
-**Example**
++ **command: **Custom command ** **
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>
+#include "ai_camera.h"
 
-// 设置 ai 视觉模块操作句柄
-AiCamera ai_camrea_handle;
+// Set up ai vision module operation handle
+AiCamera ai_camera;
 
-void setup()
+void setup(void)
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-
-    // 设置通过扫描二维码连接wifi
-    ai_camrea_handle.set_wifi_server_is_scan_qrcode(1);
-    
-    // 切换至无线图传
-    ai_camrea_handle.set_sys_mode(AI_CAMERA_WIFI_SERVER); 
-    delay(1000);               // 等待切换完成
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
 }
-void loop()
+
+void loop(void)
 {
-    String ssid, password; // 定义 ssid password
-    //获取连接到的wifi的ssid password
-    ai_camrea_handle.get_wifi_server_ssid_passward(ssid, password);
-    Serial.print("ssid: ");
-    Serial.print(ssid);
-    Serial.print(", password: ");
-    Serial.println(password);
-    Serial.print("ip: ");
-    Serial.println(ai_camrea_handle.get_wifi_server_ip()); // 获取连接连接到的ip地址
-    delay(400);
+    char buffer[128];
+    uint8_t custom_command;
+ai_camera.get_ai_chat_custom_command(custom_command); // Get custom command
+
+    sprintf(buffer, "custom_command:%d", custom_command);
+    Serial.println(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
 }
 ```
+##### get_wifi_stream_joystick
++ **get_wifi_stream_joystick(int8_t &x, int8_t &y)**  
+Retrieves the joystick values for the X and Y directions from the webpage joystick.  
 
+**Parameters:**
++ **x**: The joystick value in the X direction; the range is -100 to 100
++ **y**: The joystick value in the Y direction; the range is -100 to 100
 
+<!-- 这是一张图片，ocr 内容为： -->
+![](https://cdn.nlark.com/yuque/0/2026/gif/50993674/1770536882754-45366064-ed3e-440f-b0fa-72eb0340c07f.gif)
 
-##### set_wifi_server_ssid_passward
-+ set_wifi_server_ssid_passward(const char *ssid, const char *password)
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
 
-Set the name and password to connect to wifi
+// Set up ai vision module operation handle
+AiCamera ai_camera;
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
+}
+void loop(void)
+{
+    char buffer[128];
+    int8_t x, y;
 
-> This setting needs to be set before entering the image transfer mode, otherwise it is invalid
+    ai_camera.get_wifi_stream_joystick(x, y);                // Get the webpage joystick values
+
+    sprintf(buffer, "x:%d, y:%d\n", x, y);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_button
++ get_wifi_stream_button(uint8_t &button)
+
+Set whether to connect to Wi-Fi using QR code scanning. This must be configured before entering the Wi-Fi transmission mode.
+
+**Parameters:**
++ **button value**
+    - Each button corresponds to a bit position within a byte, represented as: `0012 3456`.
+    - When a button is pressed, the corresponding bit in the byte is set to 1.
+**Example:**
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    uint8_t button;
+
+    ai_camera.get_wifi_stream_button(button);                // Get the button from the web page
+
+    sprintf(buffer, "button:%d\n", button);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_keyboard
++ get_wifi_stream_keyboard(uint8_t &keyboard)
+
+ Get the values of the WASD keys pressed in the web image transmission.  
+
+**Parameters:**
++ keyboard value (WASD keys)
+    - Each key corresponds to a bit position within a byte, represented as: `0000 wasd`.
+    - When a button is pressed, the corresponding bit is set to 1.
+
+**Example**
+```cpp
+
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    uint8_t keyboard;
+
+    ai_camera.get_wifi_stream_keyboard(keyboard);            // Get the WASD keys pressed on the computer keyboard
+
+    sprintf(buffer, "keyboard:%d\n", keyboard);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_ssid_passward
++ get_wifi_stream_ssid_password(String &ssid, String &password)
+
+Get the name and password to connect to wifi
+
+> This setting needs to be set before entering the WIFI Stream Mode, otherwise it is invalid
 >
 
 **Parameters:**
 
 + ssid Wi-Fi name
 + password Wi-Fi password
-
-
-
 **Example:**
 
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
 
-// 设置 ai 视觉模块操作句柄
-AiCamera ai_camrea_handle;
+#include <Arduino.h>
+#include "ai_camera.h"
 
-void setup()
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 设置连接WiFi的名称与密码
-    ai_camrea_handle.set_wifi_server_ssid_passward("wifi_name", "wifi_password");
-    // 切换至无线图传
-    ai_camrea_handle.set_sys_mode(AI_CAMERA_WIFI_SERVER); 
-    delay(1000);               // 等待切换完成
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
 }
-void loop()
+void loop(void)
 {
-    Serial.print("ip: ");
-    Serial.println(ai_camrea_handle.get_wifi_server_ip()); // 获取连接连接到的ip地址
-    delay(400);
+    char buffer[128];
+    String ssid, password;
+    ai_camera.get_wifi_stream_ssid_password(ssid, password); // Get the SSID and password of the connected WiFi
+
+    sprintf(buffer, "ssid:%s, password:%s\n", ssid.c_str(), password.c_str());
+    Serial.print(buffer);
+Serial.println("----------");
+
+    delay(1000);
 }
 ```
 
 ##### get_wifi_server_ip
-+ get_wifi_server_ip()
++ get_wifi_stream_ip(String &ip)
 
 
+**Parameters:**
 
-**Return Value:  **
-
-A string representing the IP address.
-
-If the Wi-Fi connection fails, it returns "0.0.0.0" or an empty string "".
-
-If the Wi-Fi connection succeeds, it returns the IP address in the format, e.g., "192.168.132.34".
-
-
+IP address of the connection to WiFi.
 
 **Example:**
-
 ```cpp
-#include <Arduino.h>   // 引入 Arduino 头文件
-#include "ai_camera.h" // 引入 ai视觉模块的库头文件
+#include <Arduino.h>
+#include "ai_camera.h"
 
-// 设置 ai 视觉模块操作句柄
-AiCamera ai_camrea_handle;
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
 
-void setup()
+void setup(void)
 {
-    Serial.begin(115200);      // 初始化串口
-    ai_camrea_handle.Init();   // 初始化
-    // 设置连接WiFi的名称与密码
-    ai_camrea_handle.set_wifi_server_ssid_passward("wifi_name", "wifi_password");
-    // 切换至无线图传
-    ai_camrea_handle.set_sys_mode(AI_CAMERA_WIFI_SERVER); 
-    delay(1000);               // 等待切换完成
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
 }
-void loop()
+void loop(void)
 {
-    Serial.print("ip: ");
-    Serial.println(ai_camrea_handle.get_wifi_server_ip()); // 获取连接连接到的ip地址
-    delay(400);
+    char buffer[128];
+    String ip;
+
+    ai_camera.get_wifi_stream_ip(ip);                        // Get the IP address of the WiFi connection
+
+    sprintf(buffer, "ip:%s\n", ip.c_str());                  // Format the IP address
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);  // Wait for 1 second before the next loop
 }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
