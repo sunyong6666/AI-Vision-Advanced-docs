@@ -251,3 +251,53 @@ void loop()
 ```
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar22.gif)
+After uploading the code to the development board and resetting the chip, the Vision Module’s operating mode switched from Line Recognition mode to QR Code Recognition mode.
+
+##### get_sys_mode
++ get_sys_mode()
+
+Get the current operating mode of the device
+
+**Return Value:**
+
+AI_CAMERA_COLOR ~ AI_CAMERA_CARD
+
+> Indicates the current mode type. Compare the return value with the Parameter Macros to determine the mode.
+>
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+}
+
+void loop()
+{
+     int get_mode = ai_camrea_handle.get_sys_mode(); // Get system mode
+    if (get_mode == AI_CAMERA_TAG)
+    {
+        Serial.println("In tag recognition mode");
+    }
+    else if (get_mode == AI_CAMERA_FACE_ATTRIBUTE)
+    {
+        Serial.println("In face detection mode");
+    }
+    else
+    {
+        Serial.println("Other mode");
+    }
+    delay(400);
+}
+```
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar23.gif)
