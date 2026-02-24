@@ -50,8 +50,6 @@ The vision module command blocks in the ICBricks programming software can be fou
 
 
 
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/Br12.png)
 
 
 
