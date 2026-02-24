@@ -1,4 +1,4 @@
-# Supported Devices
+# Extension-ICBricks 2.0
 ## Quick Start
 In the ICBricks software, the Vision Module Extension must be used together with the K210 Vision Module.
 
