@@ -92,4 +92,5 @@ Step 4: Click the Upload button in the upper-left corner. The IDE will first com
 Step 5: Demo Effect
 
 + The K210 Vision Sensor will recognize objects and label them with their names and position information.
-
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar18.png)
