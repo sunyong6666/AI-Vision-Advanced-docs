@@ -161,12 +161,12 @@ Loop continuously.
 ```python
 from microbit import *
 
-import server_motor # 导入库（文件名）
+import server_motor # Import the library (file name)
 
-m1 = server_motor.motor(addr = server_motor.LIGHT_RED) # 创建设备对象
+m1 = server_motor.motor(addr = server_motor.LIGHT_RED) # Create the device object
 
 while True:
-    m1.run(20) # 对象使用
+    m1.run(20) # Use the object to run the motor at speed 20
 ```
 
 These are examples of servo motor usage.
@@ -201,19 +201,19 @@ Write the following code in the code editor and write it to micro: bit to see th
 ```python
 from microbit import *
 
-import six_gray # 导入六路灰度库
+import six_gray # Import the six-channel grayscale library
 
-sg = six_gray.six_gray_sensor() # 创建模块操作对象
+sg = six_gray.six_gray_sensor() # Create the module operation object
 
 while True:
-    print(sg.gray()) # 打印六路灰度值
+    print(sg.gray()) # Print the six-channel grayscale values
     sleep(500)
 ```
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC22.gif)
 
-#### OLED & Python Libraries
+#### OLED
 Referring to the library import process, in addition to the libraries that must be imported, you also need to import oled.py libraries. The project files are shown in the figure below
 
 <!-- 这是一张图片，ocr 内容为： -->
@@ -222,9 +222,9 @@ Referring to the library import process, in addition to the libraries that must 
 ```python
 from microbit import *
 
-import oled  # 导入OLED库
+import oled  # Import the OLED library
 
-display = oled.oled()  # 创建模块操作对象
+display = oled.oled()  #  Create the module operation object
 
 count=0
 while True:
@@ -245,7 +245,6 @@ _*** For the use of other devices, please refer to the API and try it yourself**
 
 ### micro:bit Python Overview:
 The Python library includes multiple device drivers. With Python’s flexibility, you can create more versatile, maintainable, and widely applicable code.
-
 
 
 Library Files Overview:
