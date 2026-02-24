@@ -301,3 +301,53 @@ void loop()
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar23.gif)
+When switching modes using the rotary dial, if you switch to Tag Recognition mode or Face Detection mode, the serial monitor will print the corresponding mode name.
+
+
+
+##### get_color_rgb
++ get_color_rgb(int rgb[3])
+
+Retrieves the RGB values from the Color Recognition mode.
+
+**Parameters:**
+
++ rgb[3] → An integer array of size 3, used as the RGB buffer.
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color detection mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_COLOR); 
+    delay(1000);                    // Wait for mode switch to complete
+}
+
+void loop()
+{
+    int rgb[3] = {0}; //RGB array data buffer
+
+    ai_camrea_handle.get_color_rgb(rgb); // Get RGB data
+    Serial.print("rgb:(");
+    Serial.print(rgb[0]);
+    Serial.print(" ");
+    Serial.print(rgb[1]);
+    Serial.print(" ");
+    Serial.print(rgb[2]);
+    Serial.println(")");
+
+    delay(400);
+}
+```
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar24.gif)
