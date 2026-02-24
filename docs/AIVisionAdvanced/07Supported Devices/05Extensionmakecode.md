@@ -127,10 +127,9 @@ This diagram shows how to connect the six-channel color and grayscale sensors to
 
 <font style="color:rgb(38, 38, 38);">Instead, it is recommended to use triggers such as buttons (as shown in the diagram below) to switch the module’s AI recognition mode after the initialization period.</font>
 
-<font style="color:rgb(38, 38, 38);">  
-</font><!-- 这是一张图片，ocr 内容为： -->
+<font style="color:rgb(38, 38, 38);">  </font>
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC07.gif)
-
 
 The "Current Mode" programming block can return a number (0~9) to represent the AI model currently running on the K210 AI Vision Module. 
 
