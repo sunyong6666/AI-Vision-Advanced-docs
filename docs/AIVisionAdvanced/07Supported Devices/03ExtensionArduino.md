@@ -34,4 +34,25 @@ You can download the required API library for the vision module from:
 #### GitHub：
 1. Visit [GitHub](https://github.com/cyc36880/Arduino_k210)
 2. Navigate to the Releases section on the lower right.
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar07.png)
 
+3. Download the latest packaged version.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar08.png)
+
+#### Gitee：
+1.Visit [Gitee](https://gitee.com/cyc36880/arduino_k210)  
+2. Navigate to the Releases section on the lower right.<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar09.png)
+
+3. Download the latest packaged version.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar10.png)
+
+
+
+### Importing the Library in Arduino IDE
+Step 1: Open the Arduino IDE, create a new project, go to the Sketch menu, select Include Library → Add .ZIP Library...
