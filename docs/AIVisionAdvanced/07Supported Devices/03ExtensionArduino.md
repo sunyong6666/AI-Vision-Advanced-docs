@@ -444,3 +444,79 @@ void loop()
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar25.gif)
+After uploading the code to the development board and resetting the chip, the Vision Module switches from Color Recognition mode to Color Block Tracking mode, and the top-right indicator updates to show the tracking color as Green.
+
+##### face_study
++ face_study()
+
+Trigger Face Recognition Learning
+
+> It learns only when a face is recognized, otherwise the instruction is invalid
+>
+> After learning, the ID of the current face is automatically assigned, ranging from 0 to 3. If more than 4 are exceeded, it will be overwritten from 0
+>
+
+
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to face recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_FACE_RE); 
+    delay(1000);                    // Wait for mode switch to complete
+    ai_camrea_handle.face_study();  // Face learning
+}
+
+void loop()
+{
+}
+```
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar26.gif)
+
+Upload the code to the development board, and reset the chip when the visual module can recognize the face. The visual module switches from color recognition mode to face recognition mode and learns the recognized face. The white box of the face is switched to orange box, and an ID is assigned to it.
+
+##### deep_learn_study
++ deep_learn_study()
+
+Make deep recognition learning
+
+> Take a series of photos when the photo is longer than 5s or the category exceeds 4, and enter recognition mode
+>
+
+
+
+**Example:**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to deep learning mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_DEEP_LEARN); 
+    delay(1000);                          // Wait for mode switch to complete
+    ai_camrea_handle.deep_learn_study();  // Deep learning study
+}
+
+void loop()
+{
+}
+```
