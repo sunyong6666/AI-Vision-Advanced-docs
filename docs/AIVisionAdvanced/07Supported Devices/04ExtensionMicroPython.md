@@ -4,7 +4,7 @@
 Click the link [micro:bit Python Editor](https://python.microbit.org/v/3/project) to enter the online editor. When entering for the first time, the interface looks like this:
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC01.png)
+
 
 | No. | Name | Function |
 | --- | --- | --- |
