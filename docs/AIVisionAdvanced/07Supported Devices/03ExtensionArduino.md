@@ -8,4 +8,4 @@ Based on this library, users can develop programs that achieve higher efficiency
 ### Hardware Requirements  
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar01.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar02.png) |
+
