@@ -1,4 +1,4 @@
-# Supported Devices
+# Extension – Arduino
 ## Introduction
 The Arduino library is written in C++ and communicates with the K210 AI Vision Sensor via the I²C interface.
 
