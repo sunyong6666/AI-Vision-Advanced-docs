@@ -9,11 +9,12 @@ Supported Devices
 
   04ExtensionMicroPython.md
   05Extensionmakecode.md
-  06ExtensionICBricks2.md
+ 
   
  
  
   
+
 
 
 
