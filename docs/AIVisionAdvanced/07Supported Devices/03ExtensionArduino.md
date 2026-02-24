@@ -609,7 +609,7 @@ Get the number of identifications or whether the identification was made
 
 
 
-**Parameters:  **
+**Parameters:**
 
 + features → Feature selection
     - AI_CAMERA_PATCH   # Color Block Tracking
@@ -1010,7 +1010,7 @@ void loop()
 <font style="color:rgb(38, 38, 38);"></font>
 
 **Parameter:**<!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar46.png)
+![](img/Ar50.png)
 
 + <font style="color:rgb(38, 38, 38);">features → Feature selection</font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color Block Tracking</font>
@@ -1034,7 +1034,7 @@ void loop()
 **Example**
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar47.gif)
+![](img/Ar46.png)
 
 ```cpp
 #include <Arduino.h>   // Include Arduino header file
@@ -1091,7 +1091,7 @@ void loop()
 ```
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar48.gif)
+![](img/Ar47.gif)
 
 <font style="color:rgb(38, 38, 38);">When the vision module recognizes a tag, the serial monitor prints the tag’s coordinates.</font>
 
@@ -1200,7 +1200,7 @@ Gets the motion command and speed in the AI dialogue.
 + **speed** Motion speed  
 ○ Value range: 0 ~ 100  
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar49.gif)
+![](img/Ar48.gif)
 
 ```cpp
 #include <Arduino.h>
@@ -1277,7 +1277,7 @@ Retrieves the joystick values for the X and Y directions from the webpage joysti
 + **y**: The joystick value in the Y direction; the range is -100 to 100
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/gif/50993674/1770536882754-45366064-ed3e-440f-b0fa-72eb0340c07f.gif)
+![](img/Ar49.gif)
 
 ```cpp
 #include <Arduino.h>
