@@ -1,4 +1,4 @@
-# Supported Devices
+# Extension – SPIKE
 ## Introduction
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP01.png)
