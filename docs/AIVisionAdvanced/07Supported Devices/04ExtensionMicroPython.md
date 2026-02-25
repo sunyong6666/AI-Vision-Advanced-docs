@@ -137,4 +137,38 @@ Ensure that the micro:bit is connected to your computer. Use the default starter
 
 
 **Default program effect:**
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC19.gif)
+
+Display a heart icon.
+
+After 1 second, scroll “Hello”.
+
+Loop continuously.
+
+```python
+from microbit import *
+
+import server_motor # Import the library (file name)
+
+m1 = server_motor.motor(addr = server_motor.LIGHT_RED) # Create the device object
+
+while True:
+    m1.run(20) # Use the object to run the motor at speed 20
+```
+
+These are examples of servo motor usage.
+
++ Line 1: from microbit import * imports the micro:bit library. Without this library, functions such as sleep cannot be used.
++ Line 3: import server_motor imports the server_motor library.
++ Line 5: Creates a device operation object. All subsequent operations on the corresponding device must be carried out through this object.
++ Line 8: Demonstrates the use of the object.
+
+All device drivers follow a similar usage pattern.
+
+
+
+### Examples
+#### Six-Way Grayscale Sensor
+Follow the library import steps. In addition to the required libraries, import six_gray.py.
 
