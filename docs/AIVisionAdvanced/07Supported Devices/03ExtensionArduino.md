@@ -949,3 +949,25 @@ void loop()
 
 <font style="color:rgb(38, 38, 38);"></font>
 
+**Parameter:**<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar50.png)
++ <font style="color:rgb(38, 38, 38);">features → Feature selection</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color Block Tracking</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_TAG                // Tag Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_LINE               // Line Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_20_CLASS       // 20-Class Object Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_QRCODE         // QR Code Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_FACE_ATTRIBUTE // Face Attribute Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_FACE_RE         //Face Recognition</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_DEEP_LEARN // Deep Learning</font>
+    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_CARD             // Card Recognition</font>
++ <font style="color:rgb(38, 38, 38);">position[4] </font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);">type, size of 4 is the position buffer</font>
+
+<font style="color:rgb(38, 38, 38);">The four values represent x, y, w, and h respectively</font>
+
++ <font style="color:rgb(38, 38, 38);">index :which object the index identifies</font>
+    - <font style="color:rgb(38, 38, 38);">Default is 0</font>
+
+
+
+**Example**
