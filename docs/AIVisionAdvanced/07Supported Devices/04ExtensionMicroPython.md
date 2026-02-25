@@ -177,4 +177,19 @@ Follow the library import steps. In addition to the required libraries, import s
 
 
 Connect the micro:bit to the six-way grayscale module using a Grove cable.
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC21.png)
+Write the following code in the code editor and write it to micro: bit to see the effect.
+
+```python
+from microbit import *
+
+import six_gray # Import the six-channel grayscale library
+
+sg = six_gray.six_gray_sensor() # Create the module operation object
+
+while True:
+    print(sg.gray()) # Print the six-channel grayscale values
+    sleep(500)
+```
 
