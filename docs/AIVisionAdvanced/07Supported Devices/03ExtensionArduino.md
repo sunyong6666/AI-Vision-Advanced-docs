@@ -768,3 +768,53 @@ id of the recognized object.
 Meaning depends on the selected mode (see explanation above).
 
 <font style="color:rgb(38, 38, 38);">Example 1: Judge the Recognized Tag ID</font>
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar31.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar32.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar33.png) |
+| --- | --- | --- |
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar34.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar35.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar36.png) |
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar37.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar38.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar39.png) |
+<font style="color:rgb(38, 38, 38);">ID tags from 0 to 8.</font>
+
+<font style="color:rgb(38, 38, 38);"></font>
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
+    delay(1000);               // Wait for mode switch to complete
+}
+
+void loop()
+{
+    // Check if a tag is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
+    {
+        // Get tag ID
+        int target_id = ai_camrea_handle.get_identify_id(AI_CAMERA_TAG);
+        Serial.print("tag id: ");
+        Serial.println(target_id);
+    }
+    else
+    {
+        Serial.println("no find tag");
+    }
+    delay(400);
+}
+```
