@@ -830,5 +830,72 @@ When the visual module does not recognize the tag, it prints "no find tag" on th
 ![](img/Ar42.png) |
 | :---: | :---: |
 
- 
+<font style="color:rgb(38, 38, 38);">"Bike" and "car" pictures.</font>
+
+<font style="color:rgb(38, 38, 38);"></font>
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to 20-class object recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_20_CLASS); 
+    delay(1000);               // Wait for mode switch to complete
+}
+
+void loop()
+{
+     // Check if any of the 20-class objects are found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_20_CLASS) > 0)
+    {
+        // Get the ID of the 20-class object
+        uint8_t target_id = ai_camrea_handle.get_identify_id(AI_CAMERA_20_CLASS);
+        if (target_id == 1)
+        {
+            Serial.println("Bicycle detected");
+        }
+        else
+        {
+            Serial.println("Other object");
+        }
+    }
+    else
+    {
+        Serial.println("no find 20 class");
+    }
+    delay(400);
+}
+```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar43.gif)
+
+When the vision module recognizes "bicycle", it prints "recognized bicycle" on the serial port; when the vision module recognizes "car", it prints "other objects" on the serial port; when no objects matching the 20 categories are recognized, it prints "no find 20 class".
+
+##### <font style="color:rgb(38, 38, 38);">get_identify_rotation</font>
++ get_identify_rotation(uint8_t features, uint8_t index=0)
+
+Get the rotation Angle of the object being identified
+
+> Currently, only the tag recognition mode supports the rotation Angle. The value obtained by other modes is always 0
+>
+**Parameter **
+
++ features function selection
+    - AI_CAMERA_TAG     # Tag Recognition
++ index: which object the index identifies
+    - The default is 0. Generally, 0 is ok. This parameter is reserved for future functional extensions
+
+
+
+**Return Value:**
+0~359
+
+**Example:**
 
