@@ -13,12 +13,17 @@ For more details, please refer to the K210 Vision Module Documentation.
 Preparation
 
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br01.png?x-oss-process=image%2Fformat%2Cwebp) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br02.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br03.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br04.png) |
-| --- | --- | --- | --- |
-| ICBricks × 1 | K210 AI Vision Sensor × 1 | Servo Motor × 1 | RJ11 to Grove Cables × 2 |
+![](img/Br01.png) 
+ICBricks × 1 
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br02.png) 
+K210 AI Vision Sensor × 1
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br03.png) 
+Servo Motor × 1
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br04.png)
+RJ11 to Grove Cables × 2 
 
 
 Operating Steps
