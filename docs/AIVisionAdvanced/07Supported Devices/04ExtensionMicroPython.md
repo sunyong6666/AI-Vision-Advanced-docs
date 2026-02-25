@@ -111,3 +111,30 @@ The process is similar to single file import. (See demo GIF for details.)
 #### Device Connection
 1. Use a microUSB cable to connect the hub and computer.
 
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC16.png)
+
+
+
+2. Use a Grove cable to connect the micro:bit with the vision module.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC17.png)
+
+
+
+#### Downloading Scripts
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC18.png)
+
+
+
+Ensure that the micro:bit is connected to your computer. Use the default starter code provided on the website, then click the highlighted button to send the code to the controller.
+
+> On the first download, firmware flashing may take longer. Later downloads will be faster.
+>
+
+
+
+**Default program effect:**
+
