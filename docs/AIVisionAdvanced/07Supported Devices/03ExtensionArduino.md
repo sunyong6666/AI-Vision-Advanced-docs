@@ -7,29 +7,37 @@ Based on this library, users can develop programs that achieve higher efficiency
 ## Quick Start
 ### Hardware Requirements  
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar01.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar02.png) |
-| :---: | :---: |
-| K210 AI Vision Sensor | Grove to 4-pin Dupont cable |
+![](img/Ar01.png) 
+| K210 AI Vision Sensor 
+
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar03.png) | <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar02.png) |
+| Grove to 4-pin Dupont cable 
+
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar03.png) 
+| Arduino Uno 
+
+| <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar04.png) |
-| Arduino Uno | Expansion Shield |
+| Expansion Shield 
 
 
 Software Requirements
 
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar05.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar06.png) |
-| :---: | :---: |
-| Arduino IDE | Vision Module API Library |
+![](img/Ar05.png) 
+| Arduino IDE 
+
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar06.png) 
+|Vision Module API Library 
 
 
 Refer to the Grove port pin definitions for correct wiring.
 
 ### Library Acquisition
-You can download the required API library for the vision module from:[Gover Port Pin Description]([https://icreate-help-center.yuque.com/dxifg8/isnecf/km1rwggvdnthnh7e](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/01CommunicationProtocol.html))
+You can download the required API library for the vision module from:[Gover Port Pin Description](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/01CommunicationProtocol.html)
 
 #### GitHub：
 1. Visit [GitHub](https://github.com/cyc36880/Arduino_k210)
