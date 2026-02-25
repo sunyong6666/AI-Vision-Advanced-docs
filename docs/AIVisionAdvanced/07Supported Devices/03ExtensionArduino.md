@@ -520,3 +520,134 @@ void loop()
 {
 }
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar27.gif)
+
+Upload the code to the development board, reset the chip, and switch the vision module to deep learning mode and carry out deep learning.
+
+##### get_face_attributes
++ get_face_attributes(int &is_male, int &is_mouth_open, int &is_smail, int &is_glasses, uint8_t index=0)
+
+Obtain face attributes
+**Parameters:**
+
++ is_male → Whether the face is male
++ is_mouth_open → Whether the mouth is open
++ is_glasses → Whether glasses are worn
++ index → The index of the detected face (default: the first face)
+
+**Example:**
+```cpp
+#include <Arduino.h>    // Include Arduino header file
+#include "ai_camera.h"  // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+void setup() 
+{
+    Serial.begin(115200); // Initialize serial communication
+    ai_camrea_handle.begin();    // Initialize
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_FACE_ATTRIBUTE); // Set mode to face attribute recognition mode
+    delay(1000); // Wait for mode switch to complete
+}
+void loop() 
+{
+    // Check if a face is detected
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_FACE_ATTRIBUTE) > 0)
+ {
+        //Get face attributes
+        int is_male, is_mouth_open, is_smail, is_glasses;
+        ai_camrea_handle.get_face_attributes(is_male, is_mouth_open, is_smail, is_glasses);
+        Serial.print("is_male: ");
+        Serial.print(is_male);
+        Serial.print(", is_mouth_open: ");
+        Serial.print(is_mouth_open);
+        Serial.print(", is_smail: ");
+        Serial.print(is_smail);
+        Serial.print(", is_glasses: ");
+        Serial.println(is_glasses);
+    }
+else
+    {
+        Serial.println("No face detected.");
+    }
+
+    delay(400);
+}
+```
+##### get_identify_num
++ get_identify_num(uint8_t features, uint8_t total=0)
+
+Get the number of identifications or whether the identification was made
+
+
+**Parameters:**
++ features → Feature selection
+    - AI_CAMERA_PATCH   # Color Block Tracking
+    - AI_CAMERA_TAG     # Tag Recognition
+    - AI_CAMERA_LINE    # Line Recognition
+    - AI_CAMERA_20_CLASS# 20-Class Object Recognition
+    - AI_CAMERA_QRCODE  # QR Code Recognition
+    - AI_CAMERA_FACE_ATTRIBUTE # Face Attribute Recognition
+    - AI_CAMERA_FACE_RE # Face Recognition
+    - AI_CAMERA_DEEP_LEARN # Deep Learning
+    - AI_CAMERA_CARD # Card Recognition
++ total → Total number of recognized objects
+
+  > In Face Recognition mode:
+>
+> total = 0 (default) → Returns the number of learned faces detected.
+>
+> total = 1 → Returns the total number of faces detected on screen (both learned and unlearned).
+>
+> In other modes: This parameter is ignored.
+>
+**Return Value:**
+
++ In Color Block Tracking, Line Recognition, QR Code Recognition, and Deep Learning modes:
+
+Returns 1 if an object is recognized.
+
+Returns 0 if no object is recognized.
+
++ In Tag Recognition, 20-Class Object Recognition, Face Attribute, and Card Recognition modes:
+  Returns the number of objects recognized.
+
+> In Face Recognition mode:
+>
+> Default returns the number of learned faces recognized.
+>
+> If total = 1, returns the total number of faces (learned + unlearned).
+>
+
+**Example:**
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to color patch tracking mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_PATCH); 
+    delay(1000);                          // Wait for mode switch to complete
+    ai_camrea_handle.set_find_color(AI_CAMERA_COLOR_GREEN);// Set to track the color green
+}
+void loop()
+{
+    // Check if a color patch is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_PATCH) > 0)
+    {
+        Serial.println("find patch");
+    }
+    else
+    {
+        Serial.println("no find patch");
+    }
+    delay(400);
+}
+```
