@@ -971,3 +971,58 @@ void loop()
 
 
 **Example**
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar46.png)
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
+    delay(1000);               // Wait for mode switch to complete
+}
+void loop()
+{
+    //  Check if a tag is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
+    {
+        // Position buffer
+        int position[4] = {0};
+        // Get position
+        ai_camrea_handle.get_identify_position(AI_CAMERA_TAG, position);
+        Serial.print("x y w h:(");
+        Serial.print(position[0]);
+        Serial.print(" ");
+        Serial.print(position[1]);
+        Serial.print(" ");
+        Serial.print(position[2]);
+        Serial.print(" ");
+        Serial.print(position[3]);
+        Serial.println(")");
+        
+        
+        int pos_x = position[0]; // Get x-coordinate
+        if (pos_x > 170)
+        {
+            Serial.println("position shifted to the left");
+        }
+        else
+        {
+            Serial.println("position shifted to the right");
+        }
+    }
+    else
+    {
+        Serial.println("no find tag");
+    }
+    delay(400);
+}
+```
