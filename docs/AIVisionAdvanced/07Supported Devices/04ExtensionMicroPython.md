@@ -84,3 +84,5 @@ These files form the foundation for other device driver libraries. Without them,
 #### Importing Files
 ##### Single File Import
 1. Click the Open button (lower-left or lower-right).
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC11.png)
