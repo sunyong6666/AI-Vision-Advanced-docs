@@ -104,3 +104,10 @@ These files form the foundation for other device driver libraries. Without them,
 
 ##### Multiple File Import
 The process is similar to single file import. (See demo GIF for details.)
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC15.gif)
+
+#### Device Connection
+1. Use a microUSB cable to connect the hub and computer.
+
