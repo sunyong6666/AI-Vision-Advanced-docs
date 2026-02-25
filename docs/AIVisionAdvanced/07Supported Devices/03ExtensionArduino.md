@@ -826,5 +826,9 @@ When the visual module does not recognize the tag, it prints "no find tag" on th
 
 **Example 2: Judge Recognized 20-Class Objects**
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar41.jpg) 
+![](img/Ar41.png)| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar42.png) |
+| :---: | :---: |
+
+ 
 
