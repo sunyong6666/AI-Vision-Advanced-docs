@@ -86,3 +86,21 @@ These files form the foundation for other device driver libraries. Without them,
 1. Click the Open button (lower-left or lower-right).
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC11.png)
+
+2. Select the file you want to import and click Open.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC12.png)
+
+3. Select the file you want to import and click Open.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC13.png)
+
+4. A success message appears at the top, and the file is added to the project list.
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC14.png)
+
+##### Multiple File Import
+The process is similar to single file import. (See demo GIF for details.)
