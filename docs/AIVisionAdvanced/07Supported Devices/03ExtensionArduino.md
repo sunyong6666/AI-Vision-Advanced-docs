@@ -668,3 +668,39 @@ Get the content identified by the QR code
 
 Returns a string (std::string type).
 **Example:**
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar29.png)
+
+A QR code with the content "hello".
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to QR code recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_QRCODE); 
+    delay(1000);              // Wait for mode switch to complete
+}
+void loop()
+{
+    // Check if a QR code is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_QRCODE) > 0)
+    {
+        //  Get QR code content
+        std::string qrcode_content = ai_camrea_handle.get_qrcode_content(); 
+        Serial.print("qrocde content: ");
+        Serial.println(qrcode_content);
+    }
+ else
+    {
+        Serial.println("no find qrcode");
+    }
+    delay(400);
+}
+```
