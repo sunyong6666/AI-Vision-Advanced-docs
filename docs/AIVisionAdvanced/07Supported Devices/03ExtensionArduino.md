@@ -1026,3 +1026,358 @@ void loop()
     delay(400);
 }
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar47.gif)
+
+<font style="color:rgb(38, 38, 38);">When the vision module recognizes a tag, the serial monitor prints the tag’s coordinates.</font>
+
+<font style="color:rgb(38, 38, 38);">When the vision module is moved left or right, it prints “Tag on the left” or “Tag on the right” accordingly.</font>
+<font style="color:rgb(38, 38, 38);">If no tag is recognized, the serial monitor prints “No tag detected.”</font>
+
+##### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
++ get_identify_position(AI_CAMERA_REGISTER_t features, int &x, int &y, int &w, int &h, uint8_t index=0)
+**Parameter:**
+
++ features → Feature selection
+    - AI_CAMERA_PATCH            //<font style="color:rgb(38, 38, 38);">Color Block Tracking</font>
+    - AI_CAMERA_TAG                // Tag Recognition
+    - AI_CAMERA_LINE               // Line Recognition
+    - AI_CAMERA_20_CLASS       // 20-Class Object Recognition
+    - AI_CAMERA_QRCODE         // QR Code Recognition
+    - AI_CAMERA_FACE_ATTRIBUTE // Face Recognition
+    - AI_CAMERA_FACE_RE         //Face Recognition
+    - AI_CAMERA_DEEP_LEARN // Deep Learning
+    - AI_CAMERA_CARD             // Card Recognition
++ x – X coordinate, reference to an int variable
++ y – Y coordinate, reference to an int variable
++ w – Width (w), reference to an int variable
++ h – Height (h), reference to an int variable
++ index – The index of the recognized object, default value is 0
+
+<font style="color:rgb(38, 38, 38);"></font>
+
+**<font style="color:rgb(38, 38, 38);">Example</font>**
+
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+     Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
+    delay(1000);               // Wait for mode switch to complete
+}
+void loop()
+{
+    // Check if a tag is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
+    {
+        // Position buffer
+        int x, y, w, h;
+        // Get position
+        ai_camrea_handle.get_identify_position(AI_CAMERA_TAG, x, y, w, h);
+        Serial.print("x y w h:(");
+        Serial.print(x);
+        Serial.print(" ");
+        Serial.print(y);
+        Serial.print(" ");
+        Serial.print(w);
+        Serial.print(" ");
+        Serial.print(h);
+        Serial.println(")");
+        
+        
+        int pos_x = x; 
+        if (pos_x > 170)
+        {
+            Serial.println("Position shifted to the right");
+        }
+        else
+        {
+            Serial.println("Position shifted to the left");
+        }
+    }
+    else
+    {
+        Serial.println("no find tag");
+    }
+    delay(400);
+}
+```
+
+> Recognition effect, refer to the previous function of the same name
+> 
+##### get_ai_chat_run_state
++ get_ai_chat_run_state(uint8_t &command, uint8_t &speed)
+
+Gets the motion command and speed in the AI dialogue.  
+
+**Parameters:**
++ **command** Motion command  
+○ Value range:  
+1: Forward,  
+2: Backward,  
+3: Left turn,  
+4: Right turn,  
+5: Stop  
++ **speed** Motion speed  
+○ Value range: 0 ~ 100  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar48.gif)
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up ai vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
+}
+
+void loop(void)
+{
+    char buffer[128];
+    uint8_t command, speed;
+
+    ai_camera.get_ai_chat_run_state(command, speed);      // Get motion state
+
+    sprintf(buffer, "command:%d, speed:%d", command, speed);
+    Serial.println(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_ai_chat_custom_command
++ get_ai_chat_custom_command(uint8_t &command)
+
+Get executed custom commands.
+
+
+
+**Parameters:**
+
++ **command: **Custom command ** **
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up ai vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
+}
+
+void loop(void)
+{
+    char buffer[128];
+    uint8_t custom_command;
+ai_camera.get_ai_chat_custom_command(custom_command); // Get custom command
+
+    sprintf(buffer, "custom_command:%d", custom_command);
+    Serial.println(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_joystick
++ **get_wifi_stream_joystick(int8_t &x, int8_t &y)**  
+Retrieves the joystick values for the X and Y directions from the webpage joystick.  
+**Parameters:**
++ **x**: The joystick value in the X direction; the range is -100 to 100
++ **y**: The joystick value in the Y direction; the range is -100 to 100
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar49.gif)
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+// Set up ai vision module operation handle
+AiCamera ai_camera;
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
+}
+void loop(void)
+{
+    char buffer[128];
+    int8_t x, y;
+ai_camera.get_wifi_stream_joystick(x, y);                // Get the webpage joystick values
+
+    sprintf(buffer, "x:%d, y:%d\n", x, y);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_button
++ get_wifi_stream_button(uint8_t &button)
+
+Set whether to connect to Wi-Fi using QR code scanning. This must be configured before entering the Wi-Fi transmission mode.
+
+**Parameters:**
++ **button value**
+    - Each button corresponds to a bit position within a byte, represented as: `0012 3456`.
+    - When a button is pressed, the corresponding bit in the byte is set to 1.
+**Example:**
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    uint8_t button;
+
+    ai_camera.get_wifi_stream_button(button);                // Get the button from the web page
+
+    sprintf(buffer, "button:%d\n", button);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_keyboard
++ get_wifi_stream_keyboard(uint8_t &keyboard)
+
+ Get the values of the WASD keys pressed in the web image transmission.  
+
+**Parameters:**
++ keyboard value (WASD keys)
+    - Each key corresponds to a bit position within a byte, represented as: `0000 wasd`.
+    - When a button is pressed, the corresponding bit is set to 1.
+
+**Example**
+```cpp
+
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    uint8_t keyboard;
+
+    ai_camera.get_wifi_stream_keyboard(keyboard);            // Get the WASD keys pressed on the computer keyboard
+
+    sprintf(buffer, "keyboard:%d\n", keyboard);
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+##### get_wifi_stream_ssid_passward
++ get_wifi_stream_ssid_password(String &ssid, String &password)
+
+Get the name and password to connect to wifi
+
+> This setting needs to be set before entering the WIFI Stream Mode, otherwise it is invalid
+>
+
+**Parameters:**
+
++ ssid Wi-Fi name
++ password Wi-Fi password
+**Example:**
+
+```cpp
+
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    String ssid, password;
+    ai_camera.get_wifi_stream_ssid_password(ssid, password); // Get the SSID and password of the connected WiFi
+
+    sprintf(buffer, "ssid:%s, password:%s\n", ssid.c_str(), password.c_str());
+    Serial.print(buffer);
+Serial.println("----------");
+delay(1000);
+}
+```
+##### get_wifi_server_ip
++ get_wifi_stream_ip(String &ip)
+
+
+**Parameters:**
+
+IP address of the connection to WiFi.
+**Example:**
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up the AI vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize the AI camera module
+}
+void loop(void)
+{
+    char buffer[128];
+    String ip;
+
+    ai_camera.get_wifi_stream_ip(ip);                        // Get the IP address of the WiFi connection
+
+    sprintf(buffer, "ip:%s\n", ip.c_str());                  // Format the IP address
+    Serial.print(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);  // Wait for 1 second before the next loop
+}
+```
