@@ -651,3 +651,20 @@ void loop()
     delay(400);
 }
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar28.gif)
+
+When the visual module recognizes a green object, it boxes it out and prints "find patch" on the serial port. If no green object is recognized, it prints "no find patch" on the serial port.
+
+
+
+##### get_qrcode_content
++ get_qrcode_content()
+Get the content identified by the QR code
+
+
+
+**Return Value:**
+
+Returns a string (std::string type).
+**Example:**
