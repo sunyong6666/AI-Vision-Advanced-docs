@@ -171,4 +171,10 @@ All device drivers follow a similar usage pattern.
 ### Examples
 #### Six-Way Grayscale Sensor
 Follow the library import steps. In addition to the required libraries, import six_gray.py.
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC20.png)
+
+
+
+Connect the micro:bit to the six-way grayscale module using a Grove cable.
 
