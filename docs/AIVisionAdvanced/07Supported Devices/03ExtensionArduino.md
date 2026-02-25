@@ -818,3 +818,10 @@ void loop()
     delay(400);
 }
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar40.gif)
+When the visual module does not recognize the tag, it prints "no find tag" on the serial port. When the tag is recognized, it prints the ID of the tag.
+
+****
+
+**Example 2: Judge Recognized 20-Class Objects**
