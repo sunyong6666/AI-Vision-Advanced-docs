@@ -29,26 +29,32 @@ RJ11 to Grove Cables × 2
 Operating Steps
 
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br05.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br06.png) |
-| --- | --- |
-| Step 1: Click Add Extension. | Step 2: Select Machine Learning. |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br07.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br08.png) |
-| Step 3: Check whether the vision module command blocks have been added. | Step 4: Write the program. |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br09.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Br10.png) |
-| Step 5: Power on the main controller and connect the vision module and actuators to the corresponding ports according to the program. Make sure the vision module I²C address is set to 0x24. | Step 6: Connect the main controller to the programming software via Bluetooth, click the Start Program button, and run the program. |
+![](img/Br05.png) 
+| Step 1: Click Add Extension. 
 
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br06.png) |
+| Step 2: Select Machine Learning. |
+
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br07.png) 
+| Step 3: Check whether the vision module command blocks have been added. 
+| <!-- 这是一张图片，ocr 内容为： -->
+
+![](img/Br08.png) |
+| Step 4: Write the program. |
+
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br09.gif) 
+| Step 5: Power on the main controller and connect the vision module and actuators to the corresponding ports according to the program. Make sure the vision module I²C address is set to 0x24. 
+
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Br10.png) |
+| Step 6: Connect the main controller to the programming software via Bluetooth, click the Start Program button, and run the program. |
 
 Demo:
-
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Br11.gif)
-
-
 
 ## Related Command Instructions
 The vision module command blocks in the ICBricks programming software can be found in the Block Guide – Vision Recognition.
