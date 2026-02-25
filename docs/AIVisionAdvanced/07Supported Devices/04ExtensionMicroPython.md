@@ -192,4 +192,63 @@ while True:
     print(sg.gray()) # Print the six-channel grayscale values
     sleep(500)
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC22.gif)
+
+#### OLED
+Referring to the library import process, in addition to the libraries that must be imported, you also need to import oled.py libraries. The project files are shown in the figure below
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC23.png)
+
+```python
+from microbit import *
+
+import oled  # Import the OLED library
+
+display = oled.oled()  #  Create the module operation object
+
+count=0
+while True:
+    count+=1
+    if count>20:
+        count=0
+    display.set_text(0, 0, "hello %d  " % (count)) # 显示字符串
+    sleep(400)
+
+```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MIC24.gif)
+
+
+
+_*** For the use of other devices, please refer to the API and try it yourself**_
+
+### micro:bit Python Overview:
+The Python library includes multiple device drivers. With Python’s flexibility, you can create more versatile, maintainable, and widely applicable code.
+Library Files Overview:
+
+| File | Function |
+| :---: | :---: |
+| color.py | Color definitions |
+| ai_camera.py | AI camera library |
+| DC_motor.py | DC motor library |
+| iic_base.py | IIC driver library |
+| joystick.py | Joystick library |
+| light_ring.py | LED ring library |
+| oled.py | OLED display library |
+| recording.py | Recording module library |
+| server_motor.py | Servo motor library |
+| servors.py | General servo library |
+| six_gray.py | Six-way grayscale library |
+| ultrasonic.py | Ultrasonic sensor library |
+
+
+
+
+
+## API Reference
+For detailed API documentation of the visual recognition module in the micro:bit Python editor, please refer to the Block Guide – Vision Recognition.
+
+
 
