@@ -898,4 +898,53 @@ Get the rotation Angle of the object being identified
 0~359
 
 **Example:**
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar44.png)
 
+```cpp
+#include <Arduino.h>   // Include Arduino header file
+#include "ai_camera.h" // Include ai vision module library header file
+
+// Set up ai vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize serial communication
+    ai_camrea_handle.Init();   // Initialize
+    // Switch mode to tag recognition mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
+    delay(1000);               // Wait for mode switch to complete
+}
+
+void loop()
+{
+    // Check if a tag is found
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
+    {
+        // Get the tag's rotation angle
+        int rot = ai_camrea_handle.get_identify_rotation(AI_CAMERA_TAG);
+        Serial.print("rot: ");
+        Serial.println(rot);
+    }
+    else
+    {
+        Serial.println("no find tag");
+    }
+    delay(400);
+}
+```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar45.gif)
+
+<font style="color:rgb(38, 38, 38);">When the visual module recognizes the tag, rotate the visual module and print the Angle of the tag relative to the visual module through the serial port. If the tag is not recognized, print "no find tag" through the serial port.</font>
+
+##### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
++ <font style="color:rgb(38, 38, 38);">get_identify_position(uint8_t features, int16_t position[4], uint8_t index=0)</font>
+
+<font style="color:rgb(38, 38, 38);">Get the position of the object being identified</font>
+
+> + <font style="color:rgb(38, 38, 38);">Line recognition : There are three rectangular boxes, from bottom to top, index 0,1,2</font>
+>
+
+<font style="color:rgb(38, 38, 38);"></font>
