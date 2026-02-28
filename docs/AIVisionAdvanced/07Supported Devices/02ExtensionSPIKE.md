@@ -18,17 +18,19 @@ Before use, set the module's port protocol to SPIKE mode.
 
 ### Hardware Preparation
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP02.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP03.png) |
-| :---: | :---: |
-| SPIKE Prime Hub | K210 AI Vision Sensor |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP04.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP05.png) |
-| Adapter Board | Grove male-to-male cable |
-![](img/SP06.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP07.png) |
-| Dual-head WeDo 2.0 cable | SPIKE Motor |
+![](img/SP02.png) 
+| SPIKE Prime Hub 
+|<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP03.png) 
+| K210 AI Vision Sensor 
+ <!-- 这是一张图片，ocr 内容为： -->
+![](img/SP05.png) 
+|Grove male-to-male cable 
+|![](img/SP06.png) 
+| Dual-head WeDo 2.0 cable 
+|<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP07.png) 
+| SPIKE Motor 
 
 
 ### Software Preparation
