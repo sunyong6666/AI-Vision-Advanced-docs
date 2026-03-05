@@ -14,7 +14,7 @@ Since SPIKE Prime does not allow the addition of custom modules, the vision modu
 
 Before use, set the module's port protocol to SPIKE mode.
 
-(Refer to the UI Interface section for operation details. For further details, see [SPIKE Compatibility Mode](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/04SPIKECompatibilityMode.html).)
+Refer to the UI Interface section for operation details. For further details, see [SPIKE Compatibility Mode](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/04SPIKECompatibilityMode.html)
 
 ### Hardware Preparation
 <!-- 这是一张图片，ocr 内容为： -->
