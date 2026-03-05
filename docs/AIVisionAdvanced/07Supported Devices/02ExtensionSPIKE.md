@@ -3,7 +3,7 @@
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP01.png)
 
-The LEGO SPIKE Prime AI and robotics programming learning series is based on the SPIKE Prime Hub system.
+The LEGO SPIKE Prime is based on the SPIKE Prime Hub system.
 
 The kit consists of the SPIKE Prime hub, motors, sensors, actuators, and LEGO Technic structural parts.
 
