@@ -3,7 +3,7 @@
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP01.png)
 
-The LEGO SPIKE Prime is based on the SPIKE Prime Hub system.
+The SPIKE Prime is based on the SPIKE Prime Hub system.
 
 The kit consists of the SPIKE Prime hub, motors, sensors, actuators, and LEGO Technic structural parts.
 
@@ -17,20 +17,20 @@ Before use, set the module's port protocol to SPIKE mode.
 (Refer to the UI Interface section for operation details. For further details, see SPIKE Compatibility Mode.)
 
 ### Hardware Preparation
-| <!-- 这是一张图片，ocr 内容为： -->
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP02.png) 
-| SPIKE Prime Hub 
-|<!-- 这是一张图片，ocr 内容为： -->
+SPIKE Prime Hub 
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP03.png) 
-| K210 AI Vision Sensor 
- <!-- 这是一张图片，ocr 内容为： -->
+K210 AI Vision Sensor 
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP05.png) 
-|Grove male-to-male cable 
-|![](img/SP06.png) 
-| Dual-head WeDo 2.0 cable 
-|<!-- 这是一张图片，ocr 内容为： -->
+Grove male-to-male cable 
+![](img/SP06.png) 
+Dual-head WeDo 2.0 cable 
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP07.png) 
-| SPIKE Motor 
+SPIKE Motor 
 
 
 ### Software Preparation
