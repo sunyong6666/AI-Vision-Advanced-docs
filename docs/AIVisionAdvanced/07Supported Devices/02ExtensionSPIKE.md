@@ -18,19 +18,20 @@ Before use, set the module's port protocol to SPIKE mode.
 
 ### Hardware Preparation
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP02.png) 
-SPIKE Prime Hub 
+![](img/SP02.png)
+SPIKE Prime Hub
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP03.png) 
-K210 AI Vision Sensor 
+![](img/SP03.png)
+K210 AI Vision Sensor
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP05.png) 
-Grove male-to-male cable 
-![](img/SP06.png) 
-Dual-head WeDo 2.0 cable 
+![](img/SP05.png)
+Grove male-to-male cable
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP06.png)
+Dual-head WeDo 2.0 cable
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP07.png) 
-SPIKE Motor 
+SPIKE Motor
 
 
 ### Software Preparation
@@ -74,7 +75,6 @@ You can enter the [LEGO SPIKE](https://spike.legoeducation.com/) programming pag
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP13.png)
-
 
 
 8. In the More Sensor Blocks section, an additional block named Get Color Sensor RGB Value will appear.
