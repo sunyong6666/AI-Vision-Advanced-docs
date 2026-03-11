@@ -236,7 +236,7 @@ Before using this function, you need to configure the network and register the i
 
 ### Get Chat Status  
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP32.png)
+![](img/SP33.png)
 
 **Display the AI chat status on the LED matrix. The possible values are:**  
 **0**: AI not started  
@@ -248,13 +248,13 @@ Before using this function, you need to configure the network and register the i
 
 ### Get Custom Command
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP33.png)
+![](img/SP34.png)
 
 Display the custom command being executed on the LED matrix. For usage details, please refer to the description of custom commands in the Conversation Mode document under Mode Selection.
 
 ### Get Motion Command  
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP34.png)
+![](img/SP35.png)
 
 Control movement by voice, including forward, backward, turn left, and turn right, and display the corresponding command number on the LED matrix.
 
@@ -267,7 +267,7 @@ Control movement by voice, including forward, backward, turn left, and turn righ
 
 ### Get Motion Speed  
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP35.png)
+![](img/SP36.png)
 Control movement speed by voice and display the required speed on the LED matrix.  
 **Motion speed range:**  
 **0 ~ 100**
@@ -275,9 +275,6 @@ Control movement speed by voice and display the required speed on the LED matrix
 
 
 ## WIFI Stream
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/SP36.png)
-
 Before using this function, the device needs to be connected to Wi-Fi. For detailed instructions, please refer to the WiFi Video Streaming document under Mode Selection.
 
 ### Get Web Button Values  
