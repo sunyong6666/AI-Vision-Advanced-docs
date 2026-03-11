@@ -13,8 +13,6 @@ EV3 Controller
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E3.png) 
 K210 AI Vision Sensor 
- <!-- 这是一张图片，ocr 内容为： -->
-![](img/E4.png) 
 Adapter Board
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E5.png) 
