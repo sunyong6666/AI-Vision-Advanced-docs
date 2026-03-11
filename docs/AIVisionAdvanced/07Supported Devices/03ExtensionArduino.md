@@ -1120,7 +1120,63 @@ void loop()
 ```
 
 > Recognition effect, refer to the previous function of the same name
-> 
+
+##### get_ai_chat_state
++ get_ai_chat_state(uint8_t &state)
+
+Get the AI chat status.  
+
+
+
+**Parameters:  **
+
++ **state**: the current status of the AI chat  
++ Value range:
+
+0: AI not started
+
+1: Connecting
+
+2: Standby
+
+3: Listening
+
+4: Speaking
+
+5: Network configuration in progress
+
+
+
+```cpp
+#include <Arduino.h>
+#include "ai_camera.h"
+
+// Set up ai vision module operation handle
+AiCamera ai_camera;
+
+void setup(void)
+{
+    Serial.begin(115200);  // Initialize serial communication
+    ai_camera.Init();      // Initialize
+}
+
+void loop(void)
+{
+    char buffer[128];
+    uint8_t state;
+
+    ai_camera.get_ai_chat_state(state);                   // Get state
+
+    sprintf(buffer, "state:%d", state);
+    Serial.println(buffer);
+
+    Serial.println("----------");
+
+    delay(1000);
+}
+```
+
+
 ##### get_ai_chat_run_state
 + get_ai_chat_run_state(uint8_t &command, uint8_t &speed)
 
