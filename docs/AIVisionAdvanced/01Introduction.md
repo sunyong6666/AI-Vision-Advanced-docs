@@ -20,7 +20,7 @@ This sensor adopts the K210 as its AI processing core. Users can switch between 
 | ⑦ | Building Block Ports | For connecting LEGO-compatible pins |
 | ⑧ | M3 Mounting Holes | For assembly with M3 standard screws |
 | ⑨ | Fill Light | Provides auxiliary lighting to adjust ambient brightness |
-| ⑩ | LPF2 |  I2C Communication, UART Communication   |
+| ⑩ | LPF2 | Used to connect SPIKE Prime devices |
 
 
 
