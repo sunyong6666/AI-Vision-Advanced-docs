@@ -231,9 +231,87 @@ After completing the above steps, connect the vision module to the SPIKE Prime h
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP31.png)
 
+## AI Chat
+Before using this function, you need to configure the network and register the identification code on Xiaozhi. For detailed instructions, please refer to the Conversation Mode document under Mode Selection.
+
+### Get Chat Status  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP33.png)
+
+**Display the AI chat status on the LED matrix. The possible values are:**  
+**0**: AI not started  
+**1**: Connecting  
+**2**: Standby  
+**3**: Listening  
+**4**: Speaking  
+**5**: Network configuration in progress  
+
+### Get Custom Command
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP34.png)
+
+Display the custom command being executed on the LED matrix. For usage details, please refer to the description of custom commands in the Conversation Mode document under Mode Selection.
+
+### Get Motion Command  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP35.png)
+
+Control movement by voice, including forward, backward, turn left, and turn right, and display the corresponding command number on the LED matrix.
+
+**Motion command values:**  
+**1**: Forward  
+**2**: Backward  
+**3**: Turn left  
+**4**: Turn right  
+**5**: Stop  
+
+### Get Motion Speed  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP36.png)
+Control movement speed by voice and display the required speed on the LED matrix.  
+**Motion speed range:**  
+**0 ~ 100**
 
 
 
+## WIFI Stream
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP37.png)
+
+Before using this function, the device needs to be connected to Wi-Fi. For detailed instructions, please refer to the WiFi Video Streaming document under Mode Selection.
+
+### Get Web Button Values  
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP38.png)
+
+Get the values of the buttons pressed on the web page and display them on the LED matrix.
+
+A byte is returned, and the bit positions corresponding to each button in the byte are: 0012 3456.
+
+When a corresponding button is pressed, its bit is set to 1.
+
+### Get Keyboard Key Values
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP39.png)
+
+Get the values of the **W, A, S, D** keys pressed on the keyboard and display them on the LED matrix.  
+A byte is returned, and the bit positions corresponding to each key in the byte are: **0000 wasd**.  
+When a corresponding key is pressed, its bit is set to **1**.  
+
+### Get Web Joystick Values  
+
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP40.png)
+
+Get the value of the joystick in the **X direction** and display it on the LED matrix.  
+The range is **0 ~ 200**. When the joystick is in the center position on the X axis, the value is **100**.  
+
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/SP41.png)
+
+Get the value of the joystick in the **Y direction** and display it on the LED matrix.  
+The range is **0 ~ 200**. When the joystick is in the center position on the Y axis, the value is **100**.  
 
 
 
