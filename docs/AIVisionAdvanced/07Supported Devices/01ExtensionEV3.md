@@ -16,10 +16,7 @@ K210 AI Vision Sensor
 Adapter Board
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E5.png) 
-Grove Male-to-Male Cable 
- <!-- 这是一张图片，ocr 内容为： -->
-![](img/E6.png)   
-EV3 Connection Cable 
+Connection Cable 
 
 
 ### Software Preparation
