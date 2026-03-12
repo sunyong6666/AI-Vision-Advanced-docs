@@ -24,9 +24,6 @@ SPIKE Prime Hub
 ![](img/SP03.png)
 K210 AI Vision Sensor
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/SP05.png)
-Grove male-to-male cable
-<!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP06.png)
 Dual-head WeDo 2.0 cable
 <!-- 这是一张图片，ocr 内容为： -->
