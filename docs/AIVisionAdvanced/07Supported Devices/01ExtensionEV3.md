@@ -35,7 +35,7 @@ Enter [LEGO Mindstorms Education EV3](https://legoeducation.cn/zh-cn/downloads/m
 Download and install the version compatible with your computer's operating system.
 
 #### Getting the Extension
-For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by **clicking here** to get it.
+For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by **clicking here**(https://github.com/ICreateRobot/AI-Vision-Sensor-)  to get it.
 
 #### Adding the Extension
 The following steps describe how to add the extension to the LEGO Mindstorms Education EV3 programming platform.
