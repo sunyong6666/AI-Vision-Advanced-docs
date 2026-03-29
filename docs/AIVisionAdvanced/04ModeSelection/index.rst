@@ -7,7 +7,7 @@ Mode Selection
 
 
    01AIVision/index
-   02AIChat.md
-   03WiFiStream.md
-   04Settings.md
+   03AIChat.md
+   04WiFiStream.md
+   05Settings.md
   
