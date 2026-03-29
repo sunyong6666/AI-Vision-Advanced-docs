@@ -2,9 +2,7 @@
 ## Power On
 ### Power Supply  
 **Instructions:**
-
-+ <font style="color:rgba(0, 0, 0, 0.85) !important;">The vision sensor requires an external device for power supply.</font>
-+ <font style="color:rgba(0, 0, 0, 0.85) !important;">The external device can be connected via USB or the Grove port, providing 5V–1A power to the sensor.</font>
+The module can be powered on only after connecting to a power supply, which can be provided by an external device. The external device can supply 5V-1A power to the vision module via USB, Grove, or LPE2 interfaces.
 
 **Demonstration:**
 
