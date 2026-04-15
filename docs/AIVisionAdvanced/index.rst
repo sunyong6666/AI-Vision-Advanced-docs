@@ -5,11 +5,11 @@ ICreateRobot AI Vision Sensor - Advanced
   
 
   01Introduction.md
-  02QuickStart.md
-  03ModeSelectionInterfaceOverview.md
-  04ModeSelection/index
+  02QuickStart/index
+  03ModeSelection/index
+  04UserGuide/index
   05CommunicationProtocol/index
   06FirmwareFlashing.md
-  07Supported Devices/index
+  07FAQ.md
  
   
