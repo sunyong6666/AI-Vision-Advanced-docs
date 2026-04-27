@@ -9,7 +9,7 @@ LEGO Mindstorms Education EV3 is a professional robotics education kit designed 
 ![](img/E1.png)
 
 ### Getting the Extension
-For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by [clicking here](https://www.icrobot.com/www/cn/index.html#/file/index?type2=ICreate%20AI%20Vision) to get it.
+For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by [clicking here](https://github.com/ICreateRobot/AI-Vision-Sensor-) to get it.
 
 ### Adding the Extension
 The following steps describe how to add the extension to the LEGO Mindstorms Education EV3 programming platform.
@@ -112,7 +112,7 @@ Output the AI conversation status to the screen, with the values:
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E21.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E22.png) |
-| 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://icreate-help-center.yuque.com/dxifg8/yme13n/kkhplc0m6axe96by)documentation.   |
+| 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html)documentation.   |
 | <br/><!-- 这是一张图片，ocr 内容为：01 3 因炎@ T X 0 T CO M 11 0.2 -->
 ![](img/E23.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E24.png) |
@@ -137,7 +137,7 @@ Output the AI conversation status to the screen, with the values:
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E28.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](https://cdn.nlark.com/yuque/0/2026/png/51021612/1774431778675-236a52ea-ece3-41f6-b8e3-c75bb90a820f.png) |
-| 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz)documentation.   |
+| 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E29.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E30.png) |
@@ -145,7 +145,7 @@ Output the AI conversation status to the screen, with the values:
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E31.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/E32.gif) |
-| 7. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz)documentation.   | 8. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.   |
+| 7. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   | 8. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.   |
 
 
 
