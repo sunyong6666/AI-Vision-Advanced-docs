@@ -116,17 +116,15 @@ Then, on a PC or mobile browser within the same local network as the module, acc
 
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC20.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC21.png) |
-| --- | --- |
+![](img/MC21.png) || --- | --- |
 | Step 1:   After completing the network configuration, locate the IP address displayed on the module.   | Step 2:   Open a browser and enter the IP address in the address bar. |
 | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC22.png) |  |
-| Step 3:   Start image transmission, and the webpage will display the real-time content captured by the module. |  |
+![](img/MC22.png) |  || Step 3:   Start image transmission, and the webpage will display the real-time content captured by the module. |  |
 
 
 Use micro:bit to display the X value of the joystick position from the webpage on the core board’s LED matrix.  
 
-**<font style="color:rgb(6, 10, 38);">Sample program</font>****:  **
+**<font style="color:rgb(6, 10, 38);">Sample program</font>**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC23.png)
