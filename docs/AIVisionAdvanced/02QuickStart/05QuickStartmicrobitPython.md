@@ -171,7 +171,7 @@ Connect the AI Vision Sensor to the micro:bit Hub and switch to Conversation Mod
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC33.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC34.gif) |
-| 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://icreate-help-center.yuque.com/dxifg8/yme13n/kkhplc0m6axe96by).   |
+| 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC35.gif) |  |
 | 7. Execution Result: The serial output prints the user’s voice input commands and speed information.   |  |
@@ -195,7 +195,7 @@ Connect the AI Vision Sensor to the micro:bit Hub and switch to WiFi Image Trans
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC39.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC40.gif) |
-| 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz).   |
+| 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC41.gif) |  |
 | 7. Execution Result: The webpage displays the camera feed, and the serial output prints the joystick values.   |  |
