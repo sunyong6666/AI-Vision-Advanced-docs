@@ -83,10 +83,10 @@ The AI Vision Sensor is connected to the Arduino Uno development board via a Gro
 | 3. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   | |
 
 
-For connecting the Grove port to Arduino board pins, please refer to [the Grove port pin description](https://icreate-help-center.yuque.com/dxifg8/yme13n/hogr1miydyd5ilhd).  
+For connecting the Grove port to Arduino board pins, please refer to [the Grove port pin description](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/01CommunicationProtocol.html).  
 
 ## Usage Examples  
-The `microbot_ai_vision` library provides multiple example programs, each containing detailed comments. Combined with [the Arduino user guide](https://icreate-help-center.yuque.com/dxifg8/yme13n/kn30m6byx8vfgfr5), these examples allow quick mastery of the library. Below, three examples are used to illustrate how to use and compile the routines  
+The `microbot_ai_vision` library provides multiple example programs, each containing detailed comments. Combined with [the Arduino user guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/04UserGuide/03UserGuideArduino.html), these examples allow quick mastery of the library. Below, three examples are used to illustrate how to use and compile the routines  
 
 ### Example 1: Vision Mode – Label Recognition
 **Example Content:  **
@@ -129,7 +129,7 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/27.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/28.png) |
-| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://icreate-help-center.yuque.com/dxifg8/yme13n/kkhplc0m6axe96by).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
+| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/29.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/30.png) |
@@ -154,7 +154,7 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/34.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/35.png) |
-| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
+| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/36.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/37.png) |
