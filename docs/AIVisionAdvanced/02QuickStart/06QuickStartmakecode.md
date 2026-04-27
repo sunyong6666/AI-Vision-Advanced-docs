@@ -7,7 +7,7 @@
 
 ## Software Preparation  
 ### Get the Extension
-Click the link [AI Vision_micro:bit_V0.1.0.hex](https://www.icrobot.com/www/cn/index.html#/file/index?type2=ICreate%20AI%20Vision) to download the micro:bit extension files.  
+Click the link [AI Vision_micro:bit_V0.1.0.hex](https://github.com/ICreateRobot/AI-Vision-Sensor-) to download the micro:bit extension files.  
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC1.png)
@@ -41,27 +41,30 @@ The **AI Vision** extension has been successfully added to the left-side menu.
 
 ## Hardware Preparation  
 ### Device Contents 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC8.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC9.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC10.png) |
-| :---: | :---: | :---: |
-| ICreateRobot AI Vision Sensor  | Grove Connection Cable |  Grove Connection Cable |
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MC8.png) 
+ICreateRobot AI Vision Sensor
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MC9.png) 
+Grove Connection Cable
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MC10.png) 
+Grove Connection Cable 
 
 
 ### Device Operation  
 Connect one end of the Grove male-to-male cable to the Grove port on the vision module, and the other end to the I²C port on the micro:bit smart hub.  
-
-                                            <!-- 这是一张图片，ocr 内容为： -->
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC11.png)
 
 
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC12.png) |  | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC13.png) |
-| :---: | --- | :---: |
-| micro:bit |  | ICreateRobot AI Vision Sensor  |
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MC12.png) |
+micro:bit
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/MC13.png) 
+ICreateRobot AI Vision Sensor  
 
 
 The K210 AI vision module communicates via I²C and can be connected to any I²C port on the micro:bit smart hub.  
@@ -81,7 +84,7 @@ First, power on the micro:bit to supply power to the vision module and enter the
 Enter Vision Mode from the mode selection. (If in another mode, press the top reset button or disconnect and reconnect the power to make the module re-enter the mode selection interface.)  
 Use micro:bit to display the R value of the color acquired by the vision module on the core board's LED matrix.  
 
- **<font style="color:rgb(6, 10, 38);">Sample program</font>****:  **
+ **<font style="color:rgb(6, 10, 38);">Sample program</font>**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC16.png)
@@ -96,7 +99,7 @@ Enter Dialogue Mode from the mode selection. (If in another mode, press the top 
 First, configure the network for the vision module. For details, please refer to Dialogue Mode.  
 Use micro:bit to display the corresponding status of the K210 module on the core board’s LED matrix.  
 
-**<font style="color:rgb(6, 10, 38);">Sample program</font>****:  **
+**<font style="color:rgb(6, 10, 38);">Sample program</font>**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC18.png)
