@@ -91,7 +91,7 @@ When the reflection value is "5%" by default, the motor stops.
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP25.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP26.png) |
-| 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://icreate-help-center.yuque.com/dxifg8/yme13n/kkhplc0m6axe96by)documentation.  |
+| 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html)documentation.  |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP27.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP28.png) |
@@ -120,7 +120,7 @@ Connect the vision module to port A of the SPIKE hub, and use the image transmis
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP34.gif) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP35.png) |
-| 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz)documentation.   |
+| 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   |
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP36.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP37.png) |
@@ -132,7 +132,7 @@ Connect the vision module to port A of the SPIKE hub, and use the image transmis
 | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP40.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP41.gif) |
-| 9. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz)documentation.   | 10. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.  |
+| 9. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   | 10. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.  |
 
 
 
