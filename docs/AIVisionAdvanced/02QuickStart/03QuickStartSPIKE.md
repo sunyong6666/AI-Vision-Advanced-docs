@@ -39,7 +39,7 @@ Connect the vision module to port A of the SPIKE hub and manually switch the vis
 
 **Operation Steps:**
 
-| ![](img/SP017.gif) | ![](img/SP018.gif) |
+| ![](img/SP23.gif) | ![](img/SP018.gif) |
 | --- | --- |
 | 1. Power on the SPIKE hub and connect the vision module to port A. The module will power on automatically.   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to SPIKE.(If the module displays SPIKE as the port protocol in the top-left corner of the screen after powering on, this step is not required.If the port protocol is not switched to SPIKE, communication errors or lag may occur.)   |
 | ![](img/SP019.png) | ![](img/SP20.png) |
@@ -63,7 +63,7 @@ When the reflection value is "5%" by default, the motor stops.
 
 **Operation Steps:**
 
-| ![](img/SP23.gif) | ![](img/SP24.gif) |
+| ![](img/SP1.gif) | ![](img/SP24.gif) |
 | --- | --- |
 | 1. Power on the SPIKE hub, and connect the vision module and motor to the hub’s ports as required: vision module to port E, motor to port B or D.   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to SPIKE.(If the module displays SPIKE as the port protocol in the top-left corner of the screen after powering on, this step is not required.If the port protocol is not switched to SPIKE, communication errors or lag may occur.)   |
 | ![](img/SP25.gif) | ![](img/SP26.png) |
@@ -92,7 +92,7 @@ Connect the vision module to port A of the SPIKE hub, and use the image transmis
 | 5. Drag the commands from the left side to the central area in the software and program according to the content requirements.   | 6. The programming content can refer to the diagram below.   |
 | ![](img/SP38.gif) | ![](img/SP39.gif) |
 | 7. In the programming software, click Connect and follow the instructions to pair the hub via Bluetooth.   | 8. Run the program.   |
-| ![](img/SP40.png) | ![](img/SP41.gif) |
+| ![](img/SP40.png) | ![](img/SP40.gif) |
 | 9. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   | 10. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.  |
 
 
