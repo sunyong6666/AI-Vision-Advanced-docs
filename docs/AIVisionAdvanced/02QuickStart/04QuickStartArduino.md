@@ -56,22 +56,22 @@ Step 3: In the `File` tab, open `Examples`. In the Examples tab, find the `Examp
 
 ## Hardware Preparation  
 ### Device Contents
-| ![](img/A9.png) | ![](img/10.png) |
+| ![](img/A9.png) | ![](img/A10.png) |
 | :---: | :---: |
 | ICreateRobot AI Vision Sensor | Grove to 4-pin Dupont cable |
-| ![](img/11.png) | ![](img/12.png) |
+| ![](img/A11.png) | ![](img/A12.png) |
 | Arduino Uno | Expansion Shield |
-| ![](img/13.png) |  |
+| ![](img/A13.png) |  |
 |  USB Connection Cable   |  |
 
 
 ### Device Operation 
 The AI Vision Sensor is connected to the Arduino Uno development board via a Grove-to-4-pin Dupont cable. The specific operation steps are as follows:  
 
-| ![](img/14.gif) | ![](img/15.gif) |
+| ![](img/A14.gif) | ![](img/A15.gif) |
 | --- | --- |
 | 1. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   | 2. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. |
-| ![](img/16.gif) | |
+| ![](img/A16.gif) | |
 | 3. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   | |
 
 
@@ -87,14 +87,14 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 
 **Operation Steps: **
 
-| ![](img/17.gif) | ![](img/18.gif) |
+| ![](img/A17.gif) | ![](img/A18.gif) |
 | --- | --- |
 | 1. Select the`tag`example program from the examples and open it.   | 2. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   |
-| ![](img/19.gif) | ![](img/20.png) |
+| ![](img/A19.gif) | ![](img/A20.png) |
 | 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Vision Mode.   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
-| ![](img/21.png) | ![](img/22.png) |
+| ![](img/A21.png) | ![](img/A22.png) |
 | 5. In the `Tools` menu, click `Port` and select the corresponding port number.   | 6. Compile and download the program.   |
-| ![](img/23.png) | ![](img/24.gif) |
+| ![](img/A23.png) | ![](img/A24.gif) |
 | 7. Prepare the labels.   | 8. Execution Result: The serial monitor prints the label ID, rotation angle, and label coordinates.   |
 
 
@@ -105,14 +105,14 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 
 **Operation Steps:**
 
-| ![](img/25.gif) | ![](img/26.gif) |
+| ![](img/A25.gif) | ![](img/A26.gif) |
 | --- | --- |
 | 1. Select the`get_run_state`example program from the examples and open it.   | 2. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   |
-| ![](img/27.gif) | ![](img/28.png) |
+| ![](img/A27.gif) | ![](img/A28.png) |
 | 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
-| ![](img/29.png) | ![](img/30.png) |
+| ![](img/A29.png) | ![](img/A30.png) |
 | 5. In the `Tools` menu, click `Port` and select the corresponding port number.   | 6. Compile and download the program.   |
-| ![](img/31.gif) | |
+| ![](img/A31.gif) | |
 | 7. Execution Result: The serial monitor prints the voice input commands and speed.   | |
 
 
@@ -123,14 +123,14 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 
 **Operation Steps:**
 
-| ![](img/32.gif) | ![](img/33.gif) |
+| ![](img/A32.gif) | ![](img/A33.gif) |
 | --- | --- |
 | 1. Select the`get_joystick`example program from the examples and open it.   | 2. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   |
-| ![](img/34.gif) | ![](img/35.png) |
+| ![](img/A34.gif) | ![](img/A35.png) |
 | 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
-| ![](img/36.png) | ![](img/37.png) |
+| ![](img/A36.png) | ![](img/A37.png) |
 | 5. In the `Tools` menu, click `Port` and select the corresponding port number.   | 6. Compile and download the program.   |
-| ![](img/38.gif) | |
+| ![](img/A38.gif) | |
 | 7. Execution Result: The serial monitor prints the joystick values.   | |
 
 
