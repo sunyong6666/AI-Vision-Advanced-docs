@@ -64,6 +64,7 @@ The overall process of adding the extension is as follows:
 The module communicates with the EV3 device via I²C, so the module must first be connected to a port on the bottom of the EV3. The module will power on automatically. After powering on, adjust the vision module’s port protocol to I²C. The specific operation steps are as follows:  
 
 | ![](img/E12.gif) | ![](img/E13.gif) |
+| :---: | :---: |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 
 
@@ -76,6 +77,7 @@ Connect the vision module to port 1 of the EV3 main controller. After running th
 **Operation Steps:**
 
 | ![](img/E14.gif) | ![](img/E15.gif) |
+| :---: | :---: |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 | <br/>![](img/E16.png) | ![](img/E17.png) |
 | 3. Open the programming software and create a program based on the example content. The programming content can refer to the diagram below.   | 4. Connect the main controller to the software via Bluetooth. After the connection, click Download and Run.   |
@@ -93,6 +95,7 @@ Output the AI conversation status to the screen, with the values:
 **Operation Steps:**
 
 | ![](img/E19.gif) | ![](img/E20.gif) |
+| :---: | :---: |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)  | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 | ![](img/E21.gif) | ![](img/E22.png) |
 | 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html)documentation.   |
@@ -110,6 +113,7 @@ Output the AI conversation status to the screen, with the values:
 **Operation Steps:**
 
 | ![](img/E26.gif) | ![](img/E27.gif) |
+| :---: | :---: |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)  | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 | ![](img/E28.gif) | ![](https://cdn.nlark.com/yuque/0/2026/png/51021612/1774431778675-236a52ea-ece3-41f6-b8e3-c75bb90a820f.png) |
 | 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   |
