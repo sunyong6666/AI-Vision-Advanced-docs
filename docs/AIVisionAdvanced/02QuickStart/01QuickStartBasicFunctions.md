@@ -7,9 +7,8 @@ The module can be powered on only after connecting to a power supply, which can 
 
 **Demonstration:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Q1.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Q2.png) |
+| ![](img/Q1.png) |![](img/Q2.png) |
+| :---: | :---: |
 | Computer USB power supply | ICBricks 2.0 main controller power supply |
 
 
