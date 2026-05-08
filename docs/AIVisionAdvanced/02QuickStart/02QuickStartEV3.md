@@ -53,8 +53,9 @@ The overall process of adding the extension is as follows:
 
 ## Hardware Preparation  
 ### Device Contents  
- ![](img/E9.png) | ![](img/E10.png) 
- EV3 Controller | ICreateRobot AI Vision Sensor 
+| ![](img/E9.png) | ![](img/E10.png) |
+| :---: | :---: |
+| EV3 Controller | ICreateRobot AI Vision Sensor |
 | ![](img/E11.png) |  |
 | EV3 Connection Cable |  |
 
