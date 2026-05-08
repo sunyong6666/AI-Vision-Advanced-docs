@@ -66,85 +66,71 @@ The overall process of adding the extension is as follows:
 ### Device Operation  
 The module communicates with the EV3 device via I²C, so the module must first be connected to a port on the bottom of the EV3. The module will power on automatically. After powering on, adjust the vision module’s port protocol to I²C. The specific operation steps are as follows:  
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E12.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E13.gif) |
+| ![](img/E12.gif) | ![](img/E13.gif) |
 | --- | --- |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 
 
 ## Usage Examples  
 ### Example 1: Vision Mode – Label Recognition   
-**Example Content:  **
+**Example Content:**
 
 Connect the vision module to port 1 of the EV3 main controller. After running the program, pressing the middle button on the EV3 will switch the vision module to Label Recognition mode. In this mode, if no label is detected, the EV3 main controller screen displays "None"; if a label is detected, the EV3 main controller displays the label ID.  
 
-**Operation Steps:  **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E14.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E15.gif) |
+| ![](img/E14.gif) | ![](img/E15.gif) |
 | --- | --- |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)   | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
-| <br/><!-- 这是一张图片，ocr 内容为： -->
-![](img/E16.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E17.png) |
+| <br/>![](img/E16.png) | ![](img/E17.png) |
+| --- | --- |
 | 3. Open the programming software and create a program based on the example content. The programming content can refer to the diagram below.   | 4. Connect the main controller to the software via Bluetooth. After the connection, click Download and Run.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E18.gif) |  |
+| ![](img/E18.gif) |  |
+| --- | --- |
 | 5.  Execution Details. |  |
 
 
 ### **Example 2: Conversation Mode – Retrieving Conversation Status  **
-**Example Content:  **
+**Example Content:**
 
 Output the AI conversation status to the screen, with the values:  
 0: AI not started  1: Connecting  2: Standby  3: Listening  4: Speaking  
 5: Configuring network  
 
-**Operation Steps:  **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E19.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E20.gif) |
+| ![](img/E19.gif) | ![](img/E20.gif) |
 | --- | --- |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)  | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E21.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E22.png) |
+| ![](img/E21.gif) | ![](img/E22.png) |
+| --- | --- |
 | 3. Switch the module to Conversation Mode   | 4. Perform network configuration on the module. For specific operation steps, refer to the [Conversation Mode ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html)documentation.   |
-| <br/><!-- 这是一张图片，ocr 内容为：01 3 因炎@ T X 0 T CO M 11 0.2 -->
-![](img/E23.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E24.png) |
+| <br/>![](img/E23.png) | ![](img/E24.png) |
+| --- | --- |
 | 5. Open the programming software and create a program based on the example content. The programming content can refer to the diagram below.   | 6. Connect the main controller to the software via Bluetooth. After the connection, click Download and Run.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E25.gif) | |
+| ![](img/E25.gif) | |
+| --- | --- |
 | 7. Execution Details. |  |
 
 
 ### Example 3: WiFi Image Transmission – Retrieving Webpage Button Values  
-**Example Content:  **
+**Example Content:**
 
  Retrieve the value of the button pressed on the webpage and display it on the screen. A single byte is returned, with each button corresponding to a bit in the byte: 0012 3456; when a button is pressed, the corresponding bit is set to 1. 
 
-**Operation Steps:  **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E26.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E27.gif) |
+| ![](img/E26.gif) | ![](img/E27.gif) |
 | --- | --- |
 | 1. Power on the EV3 main controller and connect the module to the EV3. The module will power on automatically upon connection.(Any of the four ports at the bottom of the EV3 support I²C communication; you can choose the port freely.)  | 2. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E28.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/51021612/1774431778675-236a52ea-ece3-41f6-b8e3-c75bb90a820f.png) |
+| ![](img/E28.gif) | ![](https://cdn.nlark.com/yuque/0/2026/png/51021612/1774431778675-236a52ea-ece3-41f6-b8e3-c75bb90a820f.png) |
+| --- | --- |
 | 3. Switch the module to WiFi Image Transmission mode . | 4. Perform network configuration on the module. For specific operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E29.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E30.png) |
+| ![](img/E29.png) | ![](img/E30.png) |
+| --- | --- |
 | 5. Open the programming software and create a program based on the example content. The programming content can refer to the diagram below.   | 6. Connect the main controller to the software via Bluetooth. After the connection, click Download and Run.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/E31.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/E32.gif) |
+| ![](img/E31.png) | ![](img/E32.gif) |
+| --- | --- |
 | 7. Within the same local network as the module, access the IP address displayed on the module using a PC or mobile browser to start image transmission. For detailed operation steps, refer to the [WiFi Image Transmission ](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html)documentation.   | 8. Execution Details.<br/>Webpage button mapping for image transmission: 0012 3456; when a button is pressed, the corresponding bit is set to 1.   |
 
 
