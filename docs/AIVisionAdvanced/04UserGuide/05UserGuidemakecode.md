@@ -6,8 +6,6 @@
 
 <font style="color:rgb(38, 38, 38);">Instead, it is recommended to use triggers such as buttons (as shown in the diagram below) to switch the module’s AI recognition mode after the initialization period.</font>
 
-<font style="color:rgb(38, 38, 38);">  
-</font><!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC07.gif)
 
 The "Current Mode" programming block can return a number (0~9) to represent the AI model currently running on the K210 AI Vision Module. 
@@ -136,7 +134,6 @@ The **color recognition** programming block can read the average color value wit
 + Supports recognition of standard square QR codes composed of black and white blocks. Only one QR code can be recognized at a time.
 + After pointing the camera at the QR code, the screen will frame the QR code and display the decoded content, along with the QR code's **X**, **Y**, **W**, and **H**.
 
-<!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC25.gif)
 
 **QR Code Recognition Mode** will search for all detectable QR codes in the line of sight and display the QR code's location information and decoded message.
