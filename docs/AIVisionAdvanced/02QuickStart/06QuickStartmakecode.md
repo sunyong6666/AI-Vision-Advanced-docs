@@ -41,17 +41,10 @@ The **AI Vision** extension has been successfully added to the left-side menu.
 
 ## Hardware Preparation  
 ### Device Contents 
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC8.png) 
-ICreateRobot AI Vision Sensor
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC9.png) 
-Grove Connection Cable
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC10.png) 
-Grove Connection Cable 
-
-
+| ![](img/MC8.png) | ![](img/MC9.png) | ![](img/MC10.png) | 
+| --- | --- |
+| ICreateRobot AI Vision Sensor | Grove Connection Cable | Grove Connection Cable  |
+ 
 ### Device Operation  
 Connect one end of the Grove male-to-male cable to the Grove port on the vision module, and the other end to the I²C port on the micro:bit smart hub.  
 ![](img/MC11.png) 
