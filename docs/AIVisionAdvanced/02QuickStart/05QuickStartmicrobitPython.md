@@ -100,104 +100,77 @@ Step 4: The added files will appear in the left-side project panel, indicating t
 
 ## Hardware Preparation
 ### Device Contents
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC13.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC14.png) |
+| ![](img/MIC13.png) | ![](img/MIC14.png) |
 | :---: | :---: |
 |  ICreateRobot AI Vision Sensor  | Grove Connection Cable |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC15.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC16.png) |
+| ![](img/MIC15.png) | ![](img/MIC16.png) |
 |   micro:bit Hub |  Micro-USB Connection Cable |
 
 
 ### Device Operation
 The AI Vision Sensor is connected to the micro:bit Hub via a Grove cable. The specific operation steps are as follows:  
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC17.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC18.png) |
+| ![](img/MIC17.png) | ![](img/MIC18.png) |
 | --- | --- |
 | 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.   | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC19.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC20.gif) |
+| ![](img/MIC19.gif) |![](img/MIC20.gif) |
 | 3. Press and hold the power button to turn on the micro:bit Hub.   | 4. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 
 
 ## Usage Examples  
 ### Example 1: Vision Mode – Label Recognition
-**Example Content:  **
+**Example Content:**
 
 Connect the AI Vision Sensor to the micro:bit Hub and switch to Label Recognition in Vision Mode. If the vision module does not detect a label, the micro:bit serial output prints "No label detected"; otherwise, it prints the label ID.  
 
-**Operation Steps: **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC21.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC22.png) |
+| ![](img/MIC21.png) | ![](img/MIC22.png) |
 | --- | --- |
 | 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.  | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
-| ```cpp from microbit import * import ai_camera ai_camera_handle = ai_camera.ai_camera() ai_camera_handle.set_sys_mode(ai_camera.AI_CAMERA_TAG)  sleep(1000)  while True:     if ai_camera_handle.get_identify_num(ai_camera.AI_CAMERA_TAG):          target_id = ai_camera_handle.get_identify_id(ai_camera.AI_CAMERA_TAG)         print("id：", target_id)     else:         print("No label detected")     sleep(400) ```  | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC23.png) |
+| ```cpp from microbit import * import ai_camera ai_camera_handle = ai_camera.ai_camera() ai_camera_handle.set_sys_mode(ai_camera.AI_CAMERA_TAG)  sleep(1000)  while True:     if ai_camera_handle.get_identify_num(ai_camera.AI_CAMERA_TAG):          target_id = ai_camera_handle.get_identify_id(ai_camera.AI_CAMERA_TAG)         print("id：", target_id)     else:         print("No label detected")     sleep(400) ```  | ![](img/MIC23.png) |
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC24.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC25.gif) |
+| ![](img/MIC24.gif) |![](img/MIC25.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub.Select Vision Mode.  |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC26.png)<!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC27.png)<!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC28.png) | <!-- 这是一张图片，ocr 内容为： -->
+|![](img/MIC26.png)![](img/MIC27.png)![](img/MIC28.png) | <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC29.gif) |
 | 7. Prepare the labels. | 8. Execution Result: The serial output prints the label ID.   |
 
 
 ### Example 2: Conversation Mode – Voice-Controlled Movement  
-**Example Content:  **
+**Example Content:**
 
 Connect the AI Vision Sensor to the micro:bit Hub and switch to Conversation Mode. The serial output prints the user's voice input commands and speed information.  
 
-**Operation Steps: **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC30.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC31.png) |
+| ![](img/MIC30.png) | ![](img/MIC31.png) |
 | --- | --- |
 | 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.  | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
-| ```cpp from microbit import * import ai_camera   ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_ai_chat_run_state())         sleep(1000) ```  | <!-- 这是一张图片，ocr 内容为： -->
+| ```cpp from microbit import * import ai_camera   ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_ai_chat_run_state())         sleep(1000) ```  | 片，ocr 
 ![](img/MIC32.png) |
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC33.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC34.gif) |
+| ![](img/MIC33.gif) | ![](img/MIC34.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC35.gif) |  |
+| ![](img/MIC35.gif) |  |
 | 7. Execution Result: The serial output prints the user’s voice input commands and speed information.   |  |
 
 
 ### Example 3: WiFi Image Transmission – Web Joystick 
-**Example Content:  **
+**Example Content:**
 
 Connect the AI Vision Sensor to the micro:bit Hub and switch to WiFi Image Transmission mode. The webpage displays the camera feed, and the serial output prints the joystick values.  
 
-**Operation Steps: **
+**Operation Steps:**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC36.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC37.png) |
+| ![](img/MIC36.png) | ![](img/MIC37.png) |
 | --- | --- |
 | 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.  | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
-| ```cpp from microbit import * import ai_camera  ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_wifi_stream_joystick())         sleep(1000) ```  | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC38.png) |
+| ```cpp from microbit import * import ai_camera  ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_wifi_stream_joystick())         sleep(1000) ```  | ![](img/MIC38.png) |
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC39.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC40.gif) |
+| ![](img/MIC39.gif) | ![](img/MIC40.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select WiFi Image Transmission. For usage, refer to [the WiFi Image Transmission guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MIC41.gif) |  |
+| ![](img/MIC41.gif) |  |
 | 7. Execution Result: The webpage displays the camera feed, and the serial output prints the joystick values.   |  |
 
 
