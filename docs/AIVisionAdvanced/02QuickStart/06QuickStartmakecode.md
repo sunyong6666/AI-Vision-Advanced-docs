@@ -54,17 +54,12 @@ Grove Connection Cable
 
 ### Device Operation  
 Connect one end of the Grove male-to-male cable to the Grove port on the vision module, and the other end to the I²C port on the micro:bit smart hub.  
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC11.png)
+![](img/MC11.png) 
+| ![](img/MC12.png) | ![](img/MC13.png) |
+| --- | --- |
+| micro:bit | ICreateRobot AI Vision Sensor |
 
-
-
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC12.png) |
-micro:bit
-<!-- 这是一张图片，ocr 内容为： -->
-![](img/MC13.png) 
-ICreateRobot AI Vision Sensor  
+  
 
 
 The K210 AI vision module communicates via I²C and can be connected to any I²C port on the micro:bit smart hub.  
@@ -114,12 +109,11 @@ Enter WiFi Image Transmission Mode from the mode selection. (If in another mode,
 First, configure the network for the vision module. If the network has already been configured in Dialogue Mode, you can proceed to the next step. For network configuration details, please refer to WiFi Image Transmission.  
 Then, on a PC or mobile browser within the same local network as the module, access the IP address displayed on the module to start image transmission. At the same time, control commands can be sent using the joystick or buttons.  
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC20.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC21.png) || --- | --- |
-| Step 1:   After completing the network configuration, locate the IP address displayed on the module.   | Step 2:   Open a browser and enter the IP address in the address bar. |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/MC22.png) |  || Step 3:   Start image transmission, and the webpage will display the real-time content captured by the module. |  |
+|![](img/MC20.png) | ![](img/MC21.png) |
+| --- | --- |
+| Step 1:   After completing the network configuration, locate the IP address displayed on the module. | Step 2:   Open a browser and enter the IP address in the address bar. |
+| ![](img/MC22.png) |  |
+| Step 3:   Start image transmission, and the webpage will display the real-time content captured by the module. |  |
 
 
 Use micro:bit to display the X value of the joystick position from the webpage on the core board’s LED matrix.  
