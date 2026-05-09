@@ -755,6 +755,8 @@ Detection ID
 ****
 
 **Usage example: Check the detected 20-class object**
+| [](img/Ar41.png) | ![](img/Ar42.png) |
+| :---: | :---: |
 
 
 <font style="color:rgb(38, 38, 38);">Images of "bicycle" and "car".</font>
