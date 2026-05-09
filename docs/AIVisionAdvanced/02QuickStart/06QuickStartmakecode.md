@@ -41,8 +41,8 @@ The **AI Vision** extension has been successfully added to the left-side menu.
 
 ## Hardware Preparation  
 ### Device Contents 
-| ![](img/MC8.png) | ![](img/MC9.png) | ![](img/MC10.png) | 
-| --- | --- |
+|![](img/MC8.png)|![](img/MC9.png)|![](img/MC10.png)| 
+| --- | --- | --- |
 | ICreateRobot AI Vision Sensor | Grove Connection Cable | Grove Connection Cable  |
  
 ### Device Operation  
