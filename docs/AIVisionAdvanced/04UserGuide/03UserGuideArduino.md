@@ -469,10 +469,7 @@ Detection ID
 
 **<font style="color:rgb(38, 38, 38);">Usage example: Check the detected label ID  </font>**
 
-| ![](img/Ar31.png) |![](img/Ar32.png) | ![](img/Ar33.png) |
-| :---: | --- | :---: |
-| ![](img/Ar34.png) |![](img/Ar35.png) | ![](img/Ar36.png) |
-| ![](img/Ar37.png) |![](img/Ar38.png) | ![](img/Ar39.png) |
+
 
 <font style="color:rgb(38, 38, 38);">Labels with IDs ranging from 0 to 8.</font>
 
@@ -757,8 +754,6 @@ Detection ID
 
 **Usage example: Check the detected 20-class object**
 
-| ![](img/Ar41.png) | ![](img/Ar42.png) |
-| :---: | :---: |
 
 <font style="color:rgb(38, 38, 38);">Images of "bicycle" and "car".</font>
 
