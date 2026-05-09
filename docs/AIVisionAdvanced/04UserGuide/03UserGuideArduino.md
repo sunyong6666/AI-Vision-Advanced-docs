@@ -81,7 +81,6 @@ Initialization Function
 
 AiCamera ai_camrea_handle;
 
-
 void setup()
 {
     Wire.begin();       
