@@ -114,40 +114,26 @@ First-time use requires registration with a phone number, otherwise you won't be
 **Step 3:** Enter the broadcasted verification code in the backend for device connection.
 
 ### Network Configuration Steps  
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI6.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI7.png) |
+| ![](img/AI6.gif) |![](img/AI7.png) |
 | --- | --- |
 | **Step 1:**   Switch the AI vision sensor to AI Chat Mode. The interface will change to “Configuring Network” and display “Connecting to hotspot Xiaozhi-XXXX, browser access http://192.168.4.1.” At the same time, the sensor will announce “Entering network configuration mode.”   | **Step 2:**   Open your phone settings and turn on Wi-Fi.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI8.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI9.png) |
+| ![](img/AI8.png) | ![](img/AI9.png) |
 | **Step 3:**   Select and connect to "XiaoZhi-XXXX" (device ID from Step 1).   | **Step 4:**   After completing Step 3, your phone will automatically redirect to the network configuration page. If it doesn't, please refer to Step 5.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI10.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI11.png) |
+| ![](img/AI10.png) | ![](img/AI11.png) |
 | **Step 5:**   If your phone doesn't automatically redirect, open a browser and enter [http://192.168.4.1](http://192.168.4.1) to access the network configuration page.   | **Step 6:**   From the blue section, select the available Wi-Fi network (SSID) around you and fill in the password.   Alternatively, you can manually enter the Wi-Fi network name (SSID) and password to connect.   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI12.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI13.png) |
+| ![](img/AI12.png) | ![](img/AI13.png) |
 | **Step 7:**   After entering the Wi-Fi name and password, click "Connect." After successful connection, the page will redirect, please wait patiently.   | **Step 8:**   The Visual Module interface will show a six-digit verification code. The module will also announce “Please log into the control panel, add the device, and enter the verification code XXXXXX.”   While announcing, the module's interface will display the six-digit verification code.   |
 
 
 
 
 ### Backend Registration  
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI14.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI15.png) |
+| ![](img/AI14.png) | ![](img/AI15.png) |
 | --- | --- |
 | Step 1:<br/>Open the website in a browser.<br/>Register by entering your phone number and verification code. (If you already have an account, skip this step.)  <br/> | Step 2:<br/> Click the website link: [https://xiaozhi.me/](https://xiaozhi.me/) to enter the control panel.      |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI16.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI17.png) |
+| ![](img/AI16.png) | ![](img/AI17.png) |
 | **Step 3:**   In the control panel, select the open-source version.   | **Step4:**   Click "Add Device."   |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI18.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/AI19.png) |
+| ![](img/AI18.png) | ![](img/AI19.png) |
 | **Step 5:**   Enter the six-digit verification code broadcasted by the module and click "Confirm."   | **Step 6:**   This screen will appear, indicating the device has been successfully configured. After this configuration, next time you power on, the device will be ready for use without needing to configure again.  **Note:**   If the device has already been bound to a user and you wish to change the bound user, first delete the device from the existing user account.   |
 
 
