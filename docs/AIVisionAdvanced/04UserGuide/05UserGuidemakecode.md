@@ -134,7 +134,7 @@ The **color recognition** programming block can read the average color value wit
 + Supports recognition of standard square QR codes composed of black and white blocks. Only one QR code can be recognized at a time.
 + After pointing the camera at the QR code, the screen will frame the QR code and display the decoded content, along with the QR code's **X**, **Y**, **W**, and **H**.
 
-![](img/MC25.gif)
+![](img/MC07.gif)
 
 **QR Code Recognition Mode** will search for all detectable QR codes in the line of sight and display the QR code's location information and decoded message.
 
