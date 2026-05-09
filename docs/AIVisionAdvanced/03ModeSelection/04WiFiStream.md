@@ -5,29 +5,17 @@
 **<font style="color:rgba(0, 0, 0, 0.9);">The network configuration needs to be set up for first-time use; if the network has already been configured through AI Chat Mode, this step does not need to be repeated.  </font>**
 
 ### Steps
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI1.gif) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI2.png) |
-**Step 1:**   The visual module enters Wi-Fi Stream mode, with a voice prompt indicating "Entering network configuration mode." The title bar at the top of the interface displays "Configuring Network."   
-**Step 2:**   A scrolling text on the screen shows "Device connecting to hotspot Xiaozhi-XXXX, visit [http://192.168.4.1](http://192.168.4.1) in your browser."   
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI3.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI4.png) |
-**Step 3:**   Open your phone's settings and select Wi-Fi.   
-**Step 4:**   Find and select "XiaoZhi-XXXX" from the Wi-Fi list (device ID is referenced in Step 2). 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI5.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI6.jpeg) |
-**Step 5:**   After completing Step 4, your phone will automatically redirect to the network configuration page.   If the redirect doesn't happen, proceed to Step 6.   
-**Step 6:**   If your phone doesn't automatically redirect to the configuration page, open a browser and enter [**http://192.168.4.1**](http://192.168.4.1) to access the network configuration page.   
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI7.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI8.png) |
-**Step 7:** <br/>From the blue area below, select the available Wi-Fi network name (SSID) around you and enter the password.<br/>You can also manually enter the Wi-Fi network name (SSID) and password to connect to the network. 
-**Step 8:**   After filling in the Wi-Fi name and password, click "Connect." Once connected, the page will redirect to the configuration page.   
- <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI9.png)  
-**Step 9:**   Once Step 8 is completed, the visual module's interface will switch from the "Configuring Network" screen to a screen displaying the connected network name, password, and IP address, indicating successful network configuration.   
+| ![](img/WIFI1.gif) |![](img/WIFI2.png) |
+| :---: | :---: |
+| **Step 1:**   The visual module enters Wi-Fi Stream mode, with a voice prompt indicating "Entering network configuration mode." The title bar at the top of the interface displays "Configuring Network." | **Step 2:**   A scrolling text on the screen shows "Device connecting to hotspot Xiaozhi-XXXX, visit [http://192.168.4.1](http://192.168.4.1) in your browser." |  
+| ![](img/WIFI3.png) | ![](img/WIFI4.png) |
+| **Step 3:**   Open your phone's settings and select Wi-Fi. | **Step 4:**   Find and select "XiaoZhi-XXXX" from the Wi-Fi list (device ID is referenced in Step 2). | 
+| ![](img/WIFI5.png) | ![](img/WIFI6.jpeg) |
+| **Step 5:**   After completing Step 4, your phone will automatically redirect to the network configuration page.   If the redirect doesn't happen, proceed to Step 6. | **Step 6:**   If your phone doesn't automatically redirect to the configuration page, open a browser and enter[**http://192.168.4.1**](http://192.168.4.1) to access the network configuration page. |   
+| ![](img/WIFI7.png) | ![](img/WIFI8.png) |
+| **Step 7:** <br/>From the blue area below, select the available Wi-Fi network name (SSID) around you and enter the password.<br/>You can also manually enter the Wi-Fi network name (SSID) and password to connect to the network. | **Step 8:**   After filling in the Wi-Fi name and password, click "Connect." Once connected, the page will redirect to the configuration page. |  
+| ![](img/WIFI9.png) |  |  
+| **Step 9:**   Once Step 8 is completed, the visual module's interface will switch from the "Configuring Network" screen to a screen displaying the connected network name, password, and IP address, indicating successful network configuration. |  |   
 
 
 ****Note:****  
@@ -46,14 +34,11 @@ Repeat the network configuration steps mentioned above.
 ## Image Transmission Access
 To start the image stream transmission, access the IP address displayed on the module using a PC or mobile browser within the same local area network. Additionally, control commands can be sent via the joystick or buttons.  
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI11.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI12.gif) |
-**Step 1:**   After completing the network configuration, find the IP address displayed on the module.   
-**Step 2:**   Open a browser and enter the IP address in the address bar.   
- <!-- 这是一张图片，ocr 内容为： -->
-![](img/WIFI13.gif) 
-**Step 3:**   Start the image transmission. The content captured by the module will be displayed in real-time on the webpage.   
+| ![](img/WIFI11.png) | ![](img/WIFI12.gif) |
+| :---: | :---: |
+| **Step 1:**   After completing the network configuration, find the IP address displayed on the module. | **Step 2:**   Open a browser and enter the IP address in the address bar. |  
+| ![](img/WIFI13.gif) |  |
+| **Step 3:**   Start the image transmission. The content captured by the module will be displayed in real-time on the webpage. |  |  
 
 
 
