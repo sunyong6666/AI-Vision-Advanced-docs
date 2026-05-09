@@ -109,7 +109,7 @@ Set the operating mode of the AI Vision Module.
 + `mode` – Operating mode
     - Refer to the predefined mode macros (e.g., `AI_CAMERA_COLOR`, `AI_CAMERA_TAG`, etc.)
 
-**Example Usage:  **
+**Example Usage:**
 
 ```cpp
 #include <Arduino.h>   
@@ -587,7 +587,7 @@ void loop()
 + `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
-**<font style="color:rgb(38, 38, 38);">Usage example</font>****：**
+**<font style="color:rgb(38, 38, 38);">Usage example</font>：**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar46.png)
@@ -1192,7 +1192,7 @@ Get whether a deep learning object is detected
 > This parameter is invalid in deep learning mode
 >
 
-**Return value:  **
+**Return value:**
 
 + Returns 1 if detected, 0 if not detected  
 
@@ -1603,7 +1603,7 @@ void loop(void)
 Get the connected WiFi name and password.  
 Note: Can only be obtained in WiFi image transmission mode.
 
-**Parameter**_**：**_
+**Parameter ：**
 
 + `ssid` –   WiFi Name  
 + `password` –  WiFi Password  
