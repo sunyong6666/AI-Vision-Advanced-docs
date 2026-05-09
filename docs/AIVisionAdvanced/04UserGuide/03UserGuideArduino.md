@@ -73,7 +73,7 @@ Initialization Function
 
 + `wire` – Pointer to the I²C object
 
-**Example Usage:  **
+**Example Usage:**
 
 ```cpp
 #include <Arduino.h>   
@@ -283,7 +283,7 @@ void loop()
 
 Set the color for color block tracking  
 
-** Parameter：**
+**Parameter：**
 
 + `color_id` – The color to track  
     - AI_CAMERA_COLOR_RED,     		// Red
@@ -403,7 +403,7 @@ Detected ID
 
 <font style="color:rgb(38, 38, 38);"> Get the position of the detected color  </font>
 
-** Parameters  :**
+**Parameters  :**
 
 + `<font style="color:rgb(38, 38, 38);">features</font>` – <font style="color:rgb(38, 38, 38);"> Function selection  </font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color block tracking  </font>
@@ -470,19 +470,10 @@ Detection ID
 
 **<font style="color:rgb(38, 38, 38);">Usage example: Check the detected label ID  </font>**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar31.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar32.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar33.png) |
+| ![](img/Ar31.png) |![](img/Ar32.png) | ![](img/Ar33.png) |
 | --- | --- | --- |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar34.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar35.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar36.png) |
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar37.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar38.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar39.png) |
+| ![](img/Ar34.png) | ![](img/Ar35.png) | ![](img/Ar36.png) |
+| ![](img/Ar37.png) | ![](img/Ar38.png) | ![](img/Ar39.png) |
 
 
 <font style="color:rgb(38, 38, 38);">Labels with IDs ranging from 0 to 8.</font>
@@ -768,11 +759,8 @@ Detection ID
 
 **Usage example: Check the detected 20-class object**
 
-| <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar41.png) | <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar42.png) |
+| ![](img/Ar41.png) | ![](img/Ar42.png) |
 | :---: | :---: |
-
 
 <font style="color:rgb(38, 38, 38);">Images of "bicycle" and "car".</font>
 
@@ -852,14 +840,14 @@ void loop()
 
 Get the content of the QR code recognition  
 
-**Return value:  **
+**Return value:**
 
 String  
 
 > Returns a std::string type string  
 >
 
-**Usage example:  **
+**Usage example:**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar44.png)
@@ -919,7 +907,7 @@ Get whether a QR code is detected
 > This parameter is invalid in QR code recognition mode
 >
 
-**Return value:  **
+**Return value:**
 
 + Returns 1 if detected, 0 if not detected  
 
@@ -966,7 +954,7 @@ Get face attributes
 + `is_glasses` –  Whether wearing glasses  
 + `index` –  Which face, default is the first one  
 
-** Usage example:  **
+**Usage example:**
 
 ```cpp
 #include <Arduino.h>   
@@ -1367,7 +1355,7 @@ Get the current fill light brightness
 + `state` –   Current status of AI conversation  
     -  Value range: 0: AI not started, 1: Connecting, 2: Standby, 3: Listening, 4: Speaking, 5: Network configuration  
 
-**Usage example****：**
+**Usage example：**
 
 ```cpp
 #include <Arduino.h>
@@ -1409,7 +1397,7 @@ void loop(void)
 + `speed` –  Movement speed  
     - Value range: 0–100  
 
-**Usage example****：**
+**Usage example：**
 
 ```cpp
 
