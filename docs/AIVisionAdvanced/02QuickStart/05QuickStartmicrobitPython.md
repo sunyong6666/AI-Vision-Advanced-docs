@@ -146,8 +146,7 @@ Connect the AI Vision Sensor to the micro:bit Hub and switch to Conversation Mod
 | ![](img/MIC30.png) | ![](img/MIC31.png) |
 | --- | --- |
 | 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.  | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
-| ```cpp from microbit import * import ai_camera   ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_ai_chat_run_state())         sleep(1000) ```  | 片，ocr 
-![](img/MIC32.png) |
+| ```cpp from microbit import * import ai_camera   ai_camera_handle = ai_camera.ai_camera()  while True:     print(ai_camera_handle.get_ai_chat_run_state())         sleep(1000) ```  | ![](img/MIC32.png) |
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
 | ![](img/MIC33.gif) | ![](img/MIC34.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   |
