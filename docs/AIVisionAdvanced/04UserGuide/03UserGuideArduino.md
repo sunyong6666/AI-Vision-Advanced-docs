@@ -755,7 +755,7 @@ Detection ID
 ****
 
 **Usage example: Check the detected 20-class object**
-| [](img/Ar41.png) | ![](img/Ar42.png) |
+| ![](img/Ar41.png) | ![](img/Ar42.png) |
 | :---: | :---: |
 
 
