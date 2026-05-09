@@ -224,7 +224,7 @@ The **color recognition** programming block can read the average color value wit
 ![](img/MC36.gif)
 
 ## AI conversation
-**<font style="color:rgb(6, 10, 38);">Sample program</font>****:  **
+**<font style="color:rgb(6, 10, 38);">Sample program</font>**
 
 Display the K210 module's status on the micro:bit LED matrix.
 
@@ -240,7 +240,7 @@ A 2.4GHz Wi-Fi network is required. Please refer to section [ WiFi Stream](https
 
 To start image transmission, access the IP address displayed on the module using a web browser on any phone or computer within the same local area network (LAN).
 
-**<font style="color:rgb(6, 10, 38);">Sample program</font>****:  **
+**<font style="color:rgb(6, 10, 38);">Sample program</font>**
 
 Use the micro:bit to display the joystick's X-axis value from the webpage on the core board's LED matrix.
 
