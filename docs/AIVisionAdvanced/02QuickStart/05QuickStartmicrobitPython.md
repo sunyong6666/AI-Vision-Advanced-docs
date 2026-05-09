@@ -132,7 +132,9 @@ Connect the AI Vision Sensor to the micro:bit Hub and switch to Label Recognitio
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
 | ![](img/MIC24.gif) |![](img/MIC25.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub.Select Vision Mode.  |
-|![](img/MIC26.png)![](img/MIC27.png)![](img/MIC28.png) | ![](img/MIC29.gif) |
+|![](img/MIC26.png)
+![](img/MIC27.png)
+![](img/MIC28.png) | ![](img/MIC29.gif) |
 | 7. Prepare the labels. | 8. Execution Result: The serial output prints the label ID.   |
 
 
