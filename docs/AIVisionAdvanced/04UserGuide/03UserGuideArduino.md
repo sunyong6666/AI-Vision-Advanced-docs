@@ -179,6 +179,9 @@ void loop()
     delay(400);
 }
 ```
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar2.gif)
+By switching modes using the rotary dial, the corresponding mode name is printed through the serial port when the system enters Tag Recognition Mode or Face Detection Mode.
 
 ##### Color recognition  
 ###### get_color_rgb
