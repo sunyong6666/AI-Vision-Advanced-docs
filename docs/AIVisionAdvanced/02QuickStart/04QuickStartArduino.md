@@ -85,7 +85,7 @@ The `microbot_ai_vision` library provides multiple example programs, each contai
 
 Connect the AI Vision Sensor to the Arduino UNO development board and switch to Label Recognition in Vision Mode. If the vision module does not detect a label, the board prints "No tag" to the serial monitor; otherwise, it prints the label ID, rotation angle, and label coordinates.  
 
-**Operation Steps: **
+**Operation Steps:**
 
 | ![](img/A17.gif) | ![](img/A18.gif) |
 | --- | --- |
