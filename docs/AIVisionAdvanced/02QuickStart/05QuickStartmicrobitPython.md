@@ -6,7 +6,7 @@ Click the link [micro:bit Python Editor](https://python.microbit.org/v/3/project
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MIC01.png)
 
-| _**<font style="color:#DF2A3F;">序号</font>**_ | _**<font style="color:#DF2A3F;">名称</font>**_ | _**<font style="color:#DF2A3F;">功能</font>**_ |
+| _**<font style="color:#DF2A3F;">NO.</font>**_ | _**<font style="color:#DF2A3F;">Component</font>**_ | _**<font style="color:#DF2A3F;">Description</font>**_ |
 | --- | --- | --- |
 | ① | Function Panel | Project management |
 | ② | Send Code | Send scripts to the connected micro:bit |
