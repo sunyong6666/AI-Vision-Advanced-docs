@@ -1,6 +1,6 @@
 # Quick Start – make _ code
 ## Introduction
- The K210 vision module can be used together with the micro:bit kit. The micro:bit can supply power and communicate with the vision module via the HY2.0-4P interface. For quickly getting started with the MakeCode programming platform, refer to the documentation: [**User Guide**](https://icreate-help-center.yuque.com/dxifg8/fm5sq9/fbs6nbz20xxg14nc). 
+ The K210 vision module can be used together with the micro:bit kit. The micro:bit can supply power and communicate with the vision module via the HY2.0-4P interface. For quickly getting started with the MakeCode programming platform, refer to the documentation: [**User Guide**](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/docs/Microbit/02QuickStart.html). 
 
   
 <font style="color:#DF2A3F;">It is recommended to use the micro:bit V2.0 or higher versions as the main control board. Lower versions have insufficient memory, which may cause issues with functionality.</font>
