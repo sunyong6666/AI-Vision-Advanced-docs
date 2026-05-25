@@ -85,7 +85,7 @@ Connect the vision module to port 1 of the EV3 main controller. After running th
 | 5.  Execution Details. |  |
 
 
-### **Example 2: Conversation Mode – Retrieving Conversation Status  **
+### Example 2: Conversation Mode – Retrieving Conversation Status 
 **Example Content:**
 
 Output the AI conversation status to the screen, with the values:  
