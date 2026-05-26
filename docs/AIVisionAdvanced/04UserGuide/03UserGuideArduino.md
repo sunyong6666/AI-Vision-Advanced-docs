@@ -849,6 +849,7 @@ void loop()
     delay(400);
 }
 ```
+![](img/Ar4.gif) 
 
 When the vision module detects a “bicycle,” “Bicycle Detected” is printed through the serial port. When the vision module detects a “car,” “Other Object Detected” is printed through the serial port. If no object belonging to the 20 predefined classes is detected, “No 20-Class Object Detected” is printed through the serial port.
 
