@@ -1530,9 +1530,10 @@ void loop(void)
 }
 ```
 
-###### get_wifi_stream_button
+
 #### WIFI image transmission
 ##### Get web page key values
+###### get_wifi_stream_button
 + get_wifi_stream_button(uint8_t &button)
 
 **Parameter：**
@@ -1572,8 +1573,9 @@ void loop(void)
 }
 ```
 
-###### get_wifi_stream_keyboard
+
 ##### Get keyboard key values
+###### get_wifi_stream_keyboard
 + get_wifi_stream_keyboard(uint8_t &keyboard)
 
 **Parameter：**
@@ -1613,8 +1615,8 @@ void loop(void)
 }
 ```
 
-###### get_wifi_stream_joystick
 ##### Get web page joystick values
+###### get_wifi_stream_joystick
 + get_wifi_stream_joystick(int8_t &x, int8_t &y)
 
 Get the joystick values in the X and Y directions from the web page.
@@ -1658,8 +1660,8 @@ void loop(void)
 }
 ```
 
-###### get_wifi_stream_ssid_password
 ##### Get network connection information
+###### get_wifi_stream_ssid_password
 + get_wifi_stream_ssid_password(String &ssid, String &password)
 
 Get the connected WiFi name and password.  
