@@ -667,6 +667,67 @@ When the vision module detects a tag, the tag coordinates are printed through th
 + `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
+<font style="color:rgb(38, 38, 38);"></font>
+<font style="color:rgb(38, 38, 38);">Usage example:'</font>
+```cpp
+#include <Arduino.h>   // Include the Arduino header file
+#include "ai_camera.h" // Include the AI vision module library header file
+
+// Configure the AI vision module operation handle
+AiCamera ai_camrea_handle;
+
+void setup()
+{
+    Serial.begin(115200);      // Initialize the serial port
+    Wire.begin();          // Initialize I2C
+    ai_camrea_handle.Init(&Wire); // Perform initialization
+    // Switch to Tag Recognition Mode
+    ai_camrea_handle.set_sys_mode(AI_CAMERA_TAG); 
+    delay(1000);               // Wait for the mode switch to complete
+}
+
+void loop()
+{
+    // Determine whether a tag is detected
+    if (ai_camrea_handle.get_identify_num(AI_CAMERA_TAG) > 0)
+    {
+        // Position buffer
+        int x, y, w, h;
+        // Position buffer
+        ai_camrea_handle.get_identify_position(AI_CAMERA_TAG, x, y, w, h);
+        Serial.print("x y w h:(");
+        Serial.print(x);
+        Serial.print(" ");
+        Serial.print(y);
+        Serial.print(" ");
+        Serial.print(w);
+        Serial.print(" ");
+        Serial.print(h);
+        Serial.println(")");
+        
+        
+        int pos_x = x; 
+        if (pos_x > 170)
+        {
+            Serial.println("Position shifted to the right");
+        }
+        else
+        {
+            Serial.println("Position shifted to the left");
+        }
+    }
+    else
+    {
+        Serial.println("no find tag");
+    }
+    delay(400);
+}
+```
+> <font style="color:rgb(38, 38, 38);">Recognition result, refer to the previous function with the same name</font>
+>
+
+    
+
 ##### Line recognition
 ###### get_identify_num
 + get_identify_num(uint8_t features, uint8_t total=0)
