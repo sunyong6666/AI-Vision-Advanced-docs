@@ -647,7 +647,8 @@ void loop()
 ```
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](img/Ar46.png)
+![](img/Ar3.gif)
+
 When the vision module detects a tag, the tag coordinates are printed through the serial port. Moving the vision module to the left or right outputs “Tag Position: Left” or “Tag Position: Right” respectively. If no tag is detected, “Tag Not Detected” is printed through the serial port.
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
