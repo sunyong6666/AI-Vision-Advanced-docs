@@ -1232,6 +1232,10 @@ void loop()
 {
 }
 ```
+| <!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar6.gif)
+Upload the code to the development board. After resetting the chip, the vision module switches to Deep Learning Mode and performs deep learning.
+
 
 ###### get_identify_num
 + get_identify_num(uint8_t features, uint8_t total=0)
