@@ -338,7 +338,7 @@ Get whether a color is detected
 > This parameter is invalid in color block tracking mode  
 >
 
-**Return value:  **
+**Return value:**
 
 + Returns 1 if detected, 0 if not detected  
 
@@ -1232,8 +1232,9 @@ void loop()
 {
 }
 ```
-| <!-- 这是一张图片，ocr 内容为： -->
+<!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar6.gif)
+
 Upload the code to the development board. After resetting the chip, the vision module switches to Deep Learning Mode and performs deep learning.
 
 
