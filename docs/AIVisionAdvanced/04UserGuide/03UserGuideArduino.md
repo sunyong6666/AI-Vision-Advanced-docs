@@ -532,7 +532,7 @@ Get the rotation angle of the detected label
 
 
 
-**<font style="color:rgb(38, 38, 38);">Usage example</font>****：**
+**<font style="color:rgb(38, 38, 38);">Usage example</font>**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Ar29.png)
