@@ -1457,6 +1457,9 @@ void loop(void)
 
 **Usage example：**
 
+<!-- 这是一张图片，ocr 内容为： -->
+![](img/Ar7.gif) 
+
 ```cpp
 
 #include <Arduino.h>
