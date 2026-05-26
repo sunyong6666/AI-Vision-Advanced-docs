@@ -668,7 +668,7 @@ When the vision module detects a tag, the tag coordinates are printed through th
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 <font style="color:rgb(38, 38, 38);"></font>
-<font style="color:rgb(38, 38, 38);">Usage example:'</font>
+<font style="color:rgb(38, 38, 38);">Usage example:</font>
 ```cpp
 #include <Arduino.h>   // Include the Arduino header file
 #include "ai_camera.h" // Include the AI vision module library header file
@@ -743,7 +743,7 @@ Get whether a line is detected
 > This parameter is invalid in line recognition mode
 >
 
-**Return value:  **
+**Return value:**
 
 + Returns 1 if detected, 0 if not detected  
 
@@ -762,25 +762,6 @@ Get whether a line is detected
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 > In` line recognition`, there are three rectangular boxes; from bottom to top, the indices are 0, 1, and 2.
->
-
-###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
-+ get_identify_position(AI_CAMERA_REGISTER_t features, int &x, int &y, int &w, int &h, uint8_t index=0)
-
-<font style="color:rgb(38, 38, 38);">Get the position of the detected line</font>
-
-**Parameter :**
-
-+ `features` –  Function selection 
-    - <font style="color:rgb(38, 38, 38);">AI_CAMERA_LINE               //  Line recognition  </font>
-+ `x` – int type reference    
-+ `y` – int type reference  
-+ `w` – int type reference  
-+ `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
-    - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
-
-> `<font style="color:rgb(38, 38, 38);">线条识别</font>`<font style="color:rgb(38, 38, 38);">有三个矩形框，从下到上，index依次为0，1，2</font>
 >
 
 ##### 20-class object recognition
@@ -848,7 +829,6 @@ void setup()
 
 void loop()
 {
-    // 
     if (ai_camrea_handle.get_identify_num(AI_CAMERA_20_CLASS) > 0)
     {
         
@@ -869,6 +849,10 @@ void loop()
     delay(400);
 }
 ```
+
+When the vision module detects a “bicycle,” “Bicycle Detected” is printed through the serial port. When the vision module detects a “car,” “Other Object Detected” is printed through the serial port. If no object belonging to the 20 predefined classes is detected, “No 20-Class Object Detected” is printed through the serial port.
+
+
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
 + <font style="color:rgb(38, 38, 38);">get_identify_position(uint8_t features, int16_t position[4], uint8_t index=0)</font>
