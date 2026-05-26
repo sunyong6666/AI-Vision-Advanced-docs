@@ -230,13 +230,15 @@ Display the K210 module's status on the micro:bit LED matrix.
 
 ####  <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC37.png)
+
+
 **Effect demonstration:**
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC38.gif)
 
 ## WIFI image transmission
-A 2.4GHz Wi-Fi network is required. Please refer to section [ WiFi Stream](https://icreate-help-center.yuque.com/dxifg8/yme13n/csrik9mvx7f3emuz) for network configuration details.
+A 2.4GHz Wi-Fi network is required. Please refer to section [ WiFi Stream](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html) for network configuration details.
 
 To start image transmission, access the IP address displayed on the module using a web browser on any phone or computer within the same local area network (LAN).
 
