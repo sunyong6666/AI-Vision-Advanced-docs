@@ -1129,6 +1129,9 @@ void loop()
 {
 }
 ```
+![](img/Ar5.gif)
+
+Upload the code to the development board and reset the chip while the vision module is able to detect a human face. The vision module switches from Color Recognition Mode to Face Recognition Mode and learns the detected face. The face bounding box changes from white to orange, and an ID is assigned to the detected face.
 
 ###### get_identify_num
 + get_identify_num(uint8_t features, uint8_t total=0)
