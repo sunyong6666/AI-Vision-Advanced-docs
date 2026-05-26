@@ -58,7 +58,7 @@ Explanation:
 
 
 ### Communication Example:  
-**Host reads the device register value  **
+**Host reads the device register value**
 
  Host Sends:  `49 43 41` `00 05` `02 02 00 01` ` D7`
 
