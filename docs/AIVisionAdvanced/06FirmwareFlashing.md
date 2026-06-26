@@ -9,7 +9,7 @@ When the vision module is connected to a computer via a Type-C cable, the comput
 **Note: The actual COM port numbers may vary depending on the operating system. It is recommended to check them via the Device Manager or a serial terminal tool.**
 
 **Flash Files:**  
-Download the required firmware files from the [official website](https://github.com/ICreateRobot/AI-Vision-Sensor-).
+Download the required firmware files from the [official website](https://github.com/ICreateRobot/ICreateRobot_AI_vision-sensor).
 
 ## Flashing the K210
 Access [GitHub](https://github.com/sipeed/kflash_gui.git) to obtain the kflash_gui flashing tool.  
