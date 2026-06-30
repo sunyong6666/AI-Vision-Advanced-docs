@@ -166,15 +166,15 @@ void loop()
     int get_mode = ai_camrea_handle.get_sys_mode(); 
     if (get_mode == AI_CAMERA_TAG)
     {
-        Serial.println("In label recognition mode");
+        Serial.println("处于标签识别模式");
     }
     else if (get_mode == AI_CAMERA_FACE_ATTRIBUTE)
     {
-        Serial.println("In face detection mode");
+        Serial.println("处于人脸检测模式");
     }
     else
     {
-        Serial.println("Other modes");
+        Serial.println("其他模式");
     }
     delay(400);
 }
