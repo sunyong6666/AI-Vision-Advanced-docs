@@ -12,6 +12,7 @@ After completing the above steps, connect the vision module to the SPIKE Prime h
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP21.png)
 
+## AI Vision
 ### Color Recognition
 1. Switch the vision module to Color Recognition Mode.
 2. Read the R value of the detected color from the vision module and display it on the SPIKE Prime hub.
