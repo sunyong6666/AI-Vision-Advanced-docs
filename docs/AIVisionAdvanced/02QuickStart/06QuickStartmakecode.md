@@ -7,7 +7,7 @@
 
 ## Software Preparation  
 ### Get the Extension
-Click the link [AI Vision_micro:bit_V0.1.0.hex](https://github.com/ICreateRobot/AI-Vision-Sensor-) to download the micro:bit extension files.  
+Click the link [micro:bit-AIVision V0.1.0.hex](https://github.com/ICreateRobot/ICreateRobot_AI_vision-sensor) to download the micro:bit extension files.  
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/MC1.png)
