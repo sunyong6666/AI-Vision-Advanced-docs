@@ -3,7 +3,7 @@
 ## Usage Instructions  
 Since the vision module emulates a color sensor, it is read-only. This means that you can only use the built-in color sensor blocks in SPIKE to read values from the vision module. Mode switching must be done manually on the vision module itself.
 
-The output values of the vision module in different modes correspond directly to the values of the SPIKE color sensor. For detailed mapping, please refer to the SPIKE Compatibility Mode section.
+The output values of the vision module in different modes correspond directly to the values of the SPIKE color sensor. For detailed mapping, please refer to [the SPIKE Compatibility Mode section](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/04SPIKECompatibilityMode.html).
 
 
 
