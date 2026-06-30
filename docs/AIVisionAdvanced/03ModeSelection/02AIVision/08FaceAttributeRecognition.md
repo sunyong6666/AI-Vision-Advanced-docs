@@ -10,7 +10,7 @@ Expression (smiling or neutral)
 
 Glasses (wearing or not wearing)
 
-+ Supports recognition of up to**4**faces simultaneously, with attribute results displayed for each detected face.
++ Supports recognition of up to **4** faces simultaneously, with attribute results displayed for each detected face.
 
 Demonstration:
 
