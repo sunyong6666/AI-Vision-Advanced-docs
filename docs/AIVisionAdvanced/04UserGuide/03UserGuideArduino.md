@@ -1412,7 +1412,13 @@ Get the current fill light brightness
 **Parameter：**
 
 + `state` –   Current status of AI conversation  
-    -  Value range: 0: AI not started, 1: Connecting, 2: Standby, 3: Listening, 4: Speaking, 5: Network configuration  
+    -  Value range:
+    -  0: AI not started,
+    -  1: Connecting,
+    -  2: Standby,
+    -  3: Listening,
+    -  4: Speaking,
+    -  5: Network configuration  
 
 **Usage example：**
 
