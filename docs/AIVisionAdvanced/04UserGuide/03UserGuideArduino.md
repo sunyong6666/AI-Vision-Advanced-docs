@@ -407,11 +407,11 @@ Detected ID
 
 **Parameters  :**
 
-+ `<font style="color:rgb(38, 38, 38);">features</font>` – <font style="color:rgb(38, 38, 38);"> Function selection  </font>
++ `features` – <font style="color:rgb(38, 38, 38);"> Function selection  </font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color block tracking  </font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -421,13 +421,13 @@ Detected ID
 
 **Parameters :**
 
-+ `<font style="color:rgb(38, 38, 38);">features</font>` – <font style="color:rgb(38, 38, 38);"> Function selection  </font>
++ `features` – <font style="color:rgb(38, 38, 38);"> Function selection  </font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_PATCH            //  Color block tracking </font>
 + `x` – int type reference    
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Label recognition
@@ -583,9 +583,9 @@ void loop()
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_TAG                // Label recognition </font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 **<font style="color:rgb(38, 38, 38);">Usage example</font>：**
@@ -658,13 +658,13 @@ When the vision module detects a tag, the tag coordinates are printed through th
 
 **Parameter :**
 
-+ `<font style="color:rgb(38, 38, 38);">features</font>`<font style="color:rgb(38, 38, 38);"> –  Function selection</font>
++ `features`<font style="color:rgb(38, 38, 38);"> –  Function selection</font>
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_TAG                // Label recognition </font>
 + `x` – int type reference    
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 <font style="color:rgb(38, 38, 38);"></font>
@@ -756,9 +756,9 @@ Get whether a line is detected
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_LINE               //  Line recognition  </font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 > In` line recognition`, there are three rectangular boxes; from bottom to top, the indices are 0, 1, and 2.
@@ -864,9 +864,9 @@ When the vision module detects a “bicycle,” “Bicycle Detected” is printe
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_20_CLASS       //20-class object recognition</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -882,7 +882,7 @@ When the vision module detects a “bicycle,” “Bicycle Detected” is printe
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### QR code recognition
@@ -971,9 +971,9 @@ Get whether a QR code is detected
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_QRCODE         // QR code recognition</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -989,7 +989,7 @@ Get whether a QR code is detected
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Face attribute recognition
@@ -1075,9 +1075,9 @@ Get the number of detected faces
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_FACE_ATTRIBUTE // Face attribute recognition</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -1093,7 +1093,7 @@ Get the number of detected faces
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Face recognition
@@ -1179,9 +1179,9 @@ Detection ID
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_FACE_RE         //Face recognition</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -1197,7 +1197,7 @@ Detection ID
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Deep learning
@@ -1284,9 +1284,9 @@ Detection ID
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_DEEP_LEARN // Deep learning</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -1302,7 +1302,7 @@ Detection ID
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Road sign recognition
@@ -1352,9 +1352,9 @@ Detection ID
 
 + `features` –  Function selection 
     - <font style="color:rgb(38, 38, 38);">AI_CAMERA_CARD             // Road sign recognition</font>
-+ `<font style="color:rgb(38, 38, 38);">position[4]</font>` – <font style="color:rgb(38, 38, 38);"></font>`<font style="color:rgb(38, 38, 38);">int16_t</font>`<font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
++ `position[4]` – `int16_t` <font style="color:rgb(38, 38, 38);"> type, a position buffer of size 4  </font>
     - <font style="color:rgb(38, 38, 38);">The four values represent x, y, w, h  </font>
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0  </font>
 
 ###### <font style="color:rgb(38, 38, 38);">get_identify_position</font>
@@ -1370,7 +1370,7 @@ Detection ID
 + `y` – int type reference  
 + `w` – int type reference  
 + `h` – int type reference  
-+ `<font style="color:rgb(38, 38, 38);">index</font>` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
++ `index` – <font style="color:rgb(38, 38, 38);">Which detected object  </font>
     - <font style="color:rgb(38, 38, 38);">Default is 0 </font>
 
 ##### Fill light  
