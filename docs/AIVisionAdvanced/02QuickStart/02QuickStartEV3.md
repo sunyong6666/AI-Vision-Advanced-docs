@@ -9,7 +9,7 @@ LEGO Mindstorms Education EV3 is a professional robotics education kit designed 
 ![](img/E1.png)
 
 ### Getting the Extension
-For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by [clicking here](https://github.com/ICreateRobot/AI-Vision-Sensor-) to get it.
+For the LEGO Mindstorms Education EV3 programming platform, we've developed a dedicated K210 extension specifically designed for EV3. You can add this extension to your programming platform by [clicking here](https://github.com/ICreateRobot/ICreateRobot_AI_vision-sensor) to get it.
 
 ### Adding the Extension
 The following steps describe how to add the extension to the LEGO Mindstorms Education EV3 programming platform.
