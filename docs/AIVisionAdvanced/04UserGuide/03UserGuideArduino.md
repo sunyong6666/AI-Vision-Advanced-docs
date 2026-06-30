@@ -799,7 +799,7 @@ Get the ID of the detected 20-class object
 
 Detection ID  
 
-> In 20-class object recognition mode, IDs 0–19 represent "airplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", "dining table", "dog", "house", "motorcycle", "person", "potted plant", "sheep", "sofa", "train", and "TV".
+> In 20-class object recognition mode, IDs 0–19 represent " airplane ", " bicycle ", " bird ", " boat ", " bottle ", " bus ", " car ", " cat ", " chair ", " cow ", " dining table ", " dog ", " house ", " motorcycle ", " person ", " potted plant ", " sheep ", " sofa ", " train ", and " TV ".
 >
 
 
