@@ -143,6 +143,7 @@ Control movement by voice, including forward, backward, turn left, and turn righ
 ### Get Motion Speed  
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/SP36.png)
+
 Control movement speed by voice and display the required speed on the LED matrix.  
 **Motion speed range:**  
 **0 ~ 100**
