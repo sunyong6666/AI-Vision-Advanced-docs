@@ -37,17 +37,17 @@ After configuration, the device will automatically restart to apply the new addr
 | Offset | Description | Length (bytes) |
 | :---: | --- | :---: |
 | 0x00 | Operating mode (0–9) | 1 |
-| | 0: Color Recognition | |
-| | 1: Color Block Tracking | |
-| | 2: Apriltag Recognition | |
-| | 3: Line Recognition | |
-| | 4: 20-class Object Recognition | |
-| | 5: QR Code Recognition | |
-| | 6: Face Attributes Recognition | |
-| | 7: Face ID Recognition	 | |
-| | 8: Deep Learning	 | |
-| | 9: Card Road Sign Recognition | |
-| | 10: WIFI Stream | |
+| 0x00 | 0: Color Recognition | 1 |
+| 0x00 | 1: Color Block Tracking | 1 |
+| 0x00 | 2: Apriltag Recognition | 1 |
+| 0x00 | 3: Line Recognition | 1 |
+| 0x00 | 4: 20-class Object Recognition | 1 |
+| 0x00 | 5: QR Code Recognition | 1 |
+| 0x00 | 6: Face Attributes Recognition | 1 |
+| 0x00 | 7: Face ID Recognition	 | 1 |
+| 0x00 | 8: Deep Learning	 | 1 |
+| 0x00 | 9: Card Road Sign Recognition | 1 |
+| 0x00 | 10: WIFI Stream | 1 |
 | 0x01 | Boot verification (value: 9876543210123456789; returns 0 if not fully booted) | 19 |
 | 0x02 | SD card detection (0: none, 1: detected) | 1 |
 | 0x03 | ESP32-S3 communication status (0: error, 1: normal) | 1 |
