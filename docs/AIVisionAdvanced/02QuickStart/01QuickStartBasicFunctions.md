@@ -24,25 +24,25 @@ The module can be powered on only after connecting to a power supply, which can 
 
 ## Basic Operation
 ### AI Vision Mode  
-<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select the AI Vision Mode. Press the wheel to enter this mode. Rotate the wheel left or right to choose different AI functions (the name of each function will be displayed in the title bar at the bottom of the interface). For detailed usage, refer to the Visual Mode documentation.  </font>
+<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select the AI Vision Mode. Press the wheel to enter this mode. Rotate the wheel left or right to choose different AI functions (the name of each function will be displayed in the title bar at the bottom of the interface). For detailed usage, refer to [the Visual Mode documentation](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/02AIVision/index.html).  </font>
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q4.gif)
 
 ### AI Chat Mode  
-<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select the AI Chat Mode. Press the wheel to enter this mode. In this mode, you can interact using voice commands. For detailed usage, refer to the Dialogue Mode documentation.  </font>
+<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select the AI Chat Mode. Press the wheel to enter this mode. In this mode, you can interact using voice commands. For detailed usage, refer to [the Dialogue Mode documentation](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).  </font>
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q5.gif)
 
 ### WiFi Stream  
-<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select WiFi Stream. Press the wheel to enter this mode. In this mode, you can perform WiFi video transmission. For detailed usage, refer to the WiFi Video Transmission documentation.  </font>
+<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select WiFi Stream. Press the wheel to enter this mode. In this mode, you can perform WiFi video transmission. For detailed usage, refer to [the WiFi Video Transmission documentation](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).  </font>
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q6.gif)
 
 ### Settings  
-<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select Settings. Press the wheel to enter the Settings. The settings interface allows you to change language, port protocols, addresses, and more. For detailed usage, refer to the Settings documentation.  </font>
+<font style="color:rgba(0, 0, 0, 0.85) !important;">After a successful startup, on the mode selection interface, rotate the wheel left or right to select Settings. Press the wheel to enter the Settings. The settings interface allows you to change language, port protocols, addresses, and more. For detailed usage, refer to [the Settings documentation](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/05Settings.html).  </font>
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/Q7.gif)
