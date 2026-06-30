@@ -209,7 +209,7 @@ Note：ID Mapping (0–6):
 | | | |
 | 0x02 | wifi ip<br/>The first byte indicates the length of the IP, followed by the IP address | 20 |
 | | | |
-| 0x03 | <font style="color:#DF2A3F;"> Reserved</font> | 1 |
+| 0x03 |  | |
 | 0x04 |  AI XiaoZhi Status   | 1 |
 | 0x05 |  Motion Command | 1 |
 | 0x06 |  Custom Command | 1 |
