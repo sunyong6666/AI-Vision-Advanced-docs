@@ -84,7 +84,7 @@ Use micro:bit to display the R value of the color acquired by the vision module 
 
 ### Example 2: Dialogue Mode – Dialogue Status Display  
 Enter Dialogue Mode from the mode selection. (If in another mode, press the top reset button or disconnect and reconnect the power to make the module re-enter the mode selection interface.)  
-First, configure the network for the vision module. For details, please refer to Dialogue Mode.  
+First, configure the network for the vision module. For details, please refer to [Dialogue Mode](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).  
 Use micro:bit to display the corresponding status of the K210 module on the core board’s LED matrix.  
 
 **<font style="color:rgb(6, 10, 38);">Sample program</font>**
@@ -99,7 +99,7 @@ Use micro:bit to display the corresponding status of the K210 module on the core
 
 ### Example 3:  WiFi Image Transmission – Joystick Position Acquisition  
 Enter WiFi Image Transmission Mode from the mode selection. (If in another mode, press the top reset button or disconnect and reconnect the power to make the module re-enter the mode selection interface.)  
-First, configure the network for the vision module. If the network has already been configured in Dialogue Mode, you can proceed to the next step. For network configuration details, please refer to WiFi Image Transmission.  
+First, configure the network for the vision module. If the network has already been configured in Dialogue Mode, you can proceed to the next step. For network configuration details, please refer to [WiFi Image Transmission](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/04WiFiStream.html).  
 Then, on a PC or mobile browser within the same local network as the module, access the IP address displayed on the module to start image transmission. At the same time, control commands can be sent using the joystick or buttons.  
 
 |![](img/MC20.png) | ![](img/MC21.png) |
