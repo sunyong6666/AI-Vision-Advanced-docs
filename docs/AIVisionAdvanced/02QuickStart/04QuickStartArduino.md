@@ -78,7 +78,7 @@ The AI Vision Sensor is connected to the Arduino Uno development board via a Gro
 For connecting the Grove port to Arduino board pins, please refer to [the Grove port pin description](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/05CommunicationProtocol/01CommunicationProtocol.html).  
 
 ## Usage Examples  
-The `microbot_ai_vision` library provides multiple example programs, each containing detailed comments. Combined with [the Arduino user guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/04UserGuide/03UserGuideArduino.html), these examples allow quick mastery of the library. Below, three examples are used to illustrate how to use and compile the routines  
+The `icrobot_ai_vision` library provides multiple example programs, each containing detailed comments. Combined with [the Arduino user guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/04UserGuide/03UserGuideArduino.html), these examples allow quick mastery of the library. Below, three examples are used to illustrate how to use and compile the routines  
 
 ### Example 1: Vision Mode – Label Recognition
 **Example Content:**
@@ -107,9 +107,9 @@ Connect the AI Vision Sensor to the Arduino UNO development board and switch to 
 
 | ![](img/A25.gif) | ![](img/A26.gif) |
 | --- | --- |
-| 1. Select the`get_run_state`example program from the examples and open it.   | 2. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   |
+| 1. Select the `get_run_state` example program from the examples and open it.   | 2. Insert the expansion board into the Arduino Uno development board. Connect the yellow wire of the Grove-to-4-pin Dupont cable to the SCL pin on the expansion board, the white wire to the SDA pin, the red wire to any VCC pin, and the black wire to any GND pin.   |
 | ![](img/A27.gif) | ![](img/A28.png) |
-| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   | 4. In the `Tools` menu, click `Board`, select `Arduino AVR Boards`, and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
+| 3. Connect the other end of the adapter cable to the AI Vision Sensor, and power the Arduino Uno development board via the cable from the computer. Select Conversation Mode. For network configuration, refer to [the Conversation Mode guide](https://ai-vision-advanced-docs.readthedocs.io/en/latest/docs/AIVisionAdvanced/03ModeSelection/03AIChat.html).   | 4. In the `Tools` menu, click `Board` , select `Arduino AVR Boards` , and choose the corresponding board. This example uses the `Arduino Uno` development board.   |
 | ![](img/A29.png) | ![](img/A30.png) |
 | 5. In the `Tools` menu, click `Port` and select the corresponding port number.   | 6. Compile and download the program.   |
 | ![](img/A31.gif) | |
