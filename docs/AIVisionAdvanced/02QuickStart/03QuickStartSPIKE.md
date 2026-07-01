@@ -5,7 +5,7 @@ Since SPIKE Prime does not allow adding custom modules, the vision module simula
 ## Software Preparation
 | ![](img/SP08.png) | ![](img/SP09.png) |
 | --- | --- |
-| 1. Go to the [LEGO SPIKE](https://spike.legoeducation.com/) webpage. <br/>At the bottom right, click SPIKE Prime Essential/Prime Set. | 2. Click New Project. |
+| 1. Go to the [LEGO SPIKE](https://spike.legoeducation.com/) webpage. <br/>At the bottom right, click SPIKE Prime Essential/Prime Set. | 2. Click New Project. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 | ![](img/SP10.png) | ![](img/SP11.png) |
 | 3. Select a programming method you are familiar with. <br/>(The following introduces WORD MODULE programming.) | 4. Enter the block WORD MODULE interface. |
 | ![](img/SP12.png) | ![](img/SP13.png) |
