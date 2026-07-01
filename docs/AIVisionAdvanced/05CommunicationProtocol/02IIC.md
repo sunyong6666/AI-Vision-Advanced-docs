@@ -1,6 +1,6 @@
 # IIC
 ## Device Address
-Supports three selectable addresses: `0x24、``0x25、``0x26`
+Supports three selectable addresses: `0x24`、`0x25`、`0x26`
 
 The address can be selected in the Settings interface.
 
