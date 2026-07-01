@@ -130,7 +130,7 @@ First-time use requires registration with a phone number, otherwise you won't be
 ### Backend Registration  
 | ![](img/AI14.png) | ![](img/AI15.png) |
 | --- | --- |
-| Step 1:<br/>Open the website in a browser.<br/>Register by entering your phone number and verification code.       (If you already have an account, skip this step.)  <br/> | Step 2:<br/> Click the website link: [https://xiaozhi.me/](https://xiaozhi.me/) to enter the control panel.      |
+| Step 1:<br/>Open the website in a browser.<br/>Register by entering your phone number and verification code. &nbsp;&nbsp;&nbsp;&nbsp; (If you already have an account, skip this step.)  <br/> | Step 2:<br/> Click the website link: [https://xiaozhi.me/](https://xiaozhi.me/) to enter the control panel.      |
 | ![](img/AI16.png) | ![](img/AI17.png) |
 | **Step 3:**   Click "Add Device."    | **Step4:**   Enter the six-digit verification code broadcasted by the module and click "Confirm."   |
 | ![](img/AI18.png) | ![](img/AI19.png) |
