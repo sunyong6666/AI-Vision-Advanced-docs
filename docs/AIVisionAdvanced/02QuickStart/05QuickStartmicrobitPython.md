@@ -112,9 +112,9 @@ The AI Vision Sensor is connected to the micro:bit Hub via a Grove cable. The sp
 
 | ![](img/MIC17.png) | ![](img/MIC18.png) |
 | --- | --- |
-| 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.   | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other end to the Grove port on the AI Vision Sensor.   |
+| 1. Use a Micro-USB cable to connect the micro:bit Hub to the computer.   | 2. Connect one end of the Grove cable to any I²C port on the micro:bit Hub, and connect the other <br/>end to the Grove port on the AI Vision Sensor.   |
 | ![](img/MIC19.gif) |![](img/MIC20.gif) |
-| 3. Press and hold the power button to turn on the micro:bit Hub.   | 4. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.   If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
+| 3. Press and hold the power button to turn on the micro:bit Hub.   | 4. After the module powers on, rotate the dial to go to Settings and change the port protocol to I²C.<br/>(If the module displays I²C as the port protocol in the top-left corner of the screen after powering on, this step is not required.  <br/> If the module is using the SPIKE protocol upon startup, press and hold the dial to switch to I²C.)   |
 
 
 ## Usage Examples  
@@ -132,9 +132,7 @@ Connect the AI Vision Sensor to the micro:bit Hub and switch to Label Recognitio
 | 3. Copy the above code.   | 4. Paste it into the code area of the online editor.   |
 | ![](img/MIC24.gif) |![](img/MIC25.gif) |
 | 5. Click the three-dot icon to the right of `Send to micro:bit` to connect to the micro:bit hub, then click `Send to micro:bit`to download the program to the micro:bit hub.   | 6. Press and hold the power button to turn on the micro:bit Hub.Select Vision Mode.  |
-|![](img/MIC26.png)
-![](img/MIC27.png)
-![](img/MIC28.png) | ![](img/MIC29.gif) |
+|![](img/MIC26.png)![](img/MIC27.png)![](img/MIC28.png) | ![](img/MIC29.gif) |
 | 7. Prepare the labels. | 8. Execution Result: The serial output prints the label ID.   |
 
 
