@@ -132,9 +132,9 @@ First-time use requires registration with a phone number, otherwise you won't be
 | --- | --- |
 | Step 1:<br/>Open the website in a browser.<br/>Register by entering your phone number and verification code. (If you already have an account, skip this step.)  <br/> | Step 2:<br/> Click the website link: [https://xiaozhi.me/](https://xiaozhi.me/) to enter the control panel.      |
 | ![](img/AI16.png) | ![](img/AI17.png) |
-| **Step 3:**   In the control panel, select the open-source version.   | **Step4:**   Click "Add Device."   |
+| **Step 3:**   Click "Add Device."    | **Step4:**   Enter the six-digit verification code broadcasted by the module and click "Confirm."   |
 | ![](img/AI18.png) | ![](img/AI19.png) |
-| **Step 5:**   Enter the six-digit verification code broadcasted by the module and click "Confirm."   | **Step 6:**   This screen will appear, indicating the device has been successfully configured. After this configuration, next time you power on, the device will be ready for use without needing to configure again.  **Note:**   If the device has already been bound to a user and you wish to change the bound user, first delete the device from the existing user account.   |
+| **Step 5:**   In the control panel, select the open-source version.  | **Step 6:**   This screen will appear, indicating that the device has been successfully configured. After this setup is completed, the device will be ready for use upon the next power-on, without requiring configuration again.  **Note:**   If the device has already been bound to a user account and you wish to change the bound user, please first go to the location indicated in the image within the original user account and remove the device.   |
 
 
 
