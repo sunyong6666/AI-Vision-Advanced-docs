@@ -1,13 +1,13 @@
 # SPIKE Compatibility Mode
 When the communication protocol is switched to SPIKE mode, the module simulates the output of a SPIKE color sensor. The K210 will generate corresponding color values, reflectance, and RGB data based on the current AI recognition mode.
 
-_***Note: **_When in SPIKE mode, the module must be connected to a SPIKE device. If not connected, the module will not function properly. To reset to factory settings: First, disconnect the power supply. Hold down the button without releasing it while plugging in a Type-C charger. Once the boot screen appears, release the button to restore default configurations.
+_**Note:**_When in SPIKE mode, the module must be connected to a SPIKE device. If not connected, the module will not function properly. To reset to factory settings: First, disconnect the power supply. Hold down the button without releasing it while plugging in a Type-C charger. Once the boot screen appears, release the button to restore default configurations.
 
 
 
 When the port protocol is switched to SPIKE mode, the K210 simulates the output of a SPIKE color sensor. In different vision modes, the meaning of the color value, reflectance, and RGB values is as follows:
 
-| **Mode** | **Color Value** | **Reflectance** | **R Value** | **G Value  ** | **B Value  ** |
+| **Mode** | **Color Value** | **Reflectance** | **R Value** | **G Value** | **B Value** |
 | :---: | :---: | :---: | --- | --- | --- |
 | Color Recognition | 9 | (R+G+B)/255×100 | Red component | Green component | Blue component |
 | Color Block Tracking | 9 if found, -1 otherwise | Block W / 3 | 0 | Block X coordinate | Block Y coordinate |
@@ -26,8 +26,8 @@ When the port protocol is switched to SPIKE mode, the K210 simulates the output 
 
 Note:  
 
-+ `<font style="background-color:rgba(255, 255, 255, 0.05);"> Color Value</font>`  Corresponds to the "Color Number" in the SPIKE protocol.  
-+ `<font style="background-color:rgba(255, 255, 255, 0.05);">(R+G+B)/255×100</font>`  This is the calculation method for simulating reflectance, with results in the range of **0~100**.  
++ `Color Value`  Corresponds to the "Color Number" in the SPIKE protocol.  
++ `(R+G+B)/255×100`  This is the calculation method for simulating reflectance, with results in the range of **0~100**.  
 + For unused fields (such as deep learning, Wi-Fi, etc.), the RGB values may be **0** or random.
 + **Line Recognition**: SPIKE can only capture the coordinates of the lowest recognized line.
 + **Image Transmission Web Joystick**: Two bytes represent the X and Y joystick values, with the midpoint being **100**.
