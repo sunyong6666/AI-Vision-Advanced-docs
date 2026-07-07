@@ -46,7 +46,7 @@ Unzip the downloaded compressed file, and the folder will contain only one execu
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/F5.png)
 
-3.  Click **Open File**, and in the dialog that opens, choose the **k210_master_v1.1.kfpkg** file. For the other options, refer to the image below, and select the port according to the actual port. Then, click **Flash** and wait for the flashing process to complete.  
+3.  Click **Open File**, and in the dialog that opens, choose the **k210_master_v2.0.1.kfpkg** file. For the other options, refer to the image below, and select the port according to the actual port. Then, click **Flash** and wait for the flashing process to complete.  
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/F6.png)
