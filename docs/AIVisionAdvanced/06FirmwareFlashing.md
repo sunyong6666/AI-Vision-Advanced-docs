@@ -70,7 +70,7 @@ Use a **Type-C data cable** to connect the K210 Visual Recognition Module to the
 
 3. Upload the Firmware:  
 
-Click the "..." button, and in the dialog that opens, select the k210_esp32s3_v1.0.0.bin file. Set the address to 0x00 and check the checkbox next to the firmware file.
+Click the "..." button, and in the dialog that opens, select the k210_xiaozhi_v2.0.1.bin file. Set the address to 0x00 and check the checkbox next to the firmware file.
 
 <!-- 这是一张图片，ocr 内容为： -->
 ![](img/F9.png)
