@@ -4,7 +4,7 @@
 
 
 
-The AI Vision Sensor features a built-in K210 and ESP32‑S3 dual-core processor, combining high-performance AI computing with wireless communication capabilities. It can stably achieve AI intelligent interaction and WiFi wireless image transmission, meeting the needs of complex scenarios such as visual recognition, real-time data feedback, and intelligent interaction. The module integrates Grove and LPF2 standard interfaces on both sides, offering strong hardware compatibility and direct connection to EV3, SPIKE, Arduino, micro:bit, and ICBricks 2.0, enabling rapid expansion and interaction. Users can intuitively switch working modes and communication protocols via the rotary switch on the top of the module, making operation simple and efficient, greatly reducing debugging and usage barriers. It is suitable for AI education, intelligent robotics, and IoT visual projects, among various application scenarios.
+The AI Vision Sensor features a built-in K210 and ESP32‑S3 dual-core processor, combining high-performance AI computing with wireless communication capabilities. It can stably achieve AI intelligent interaction and WiFi wireless image transmission, meeting the needs of complex scenarios such as visual recognition, real-time data feedback, and intelligent interaction. The module integrates Grove and LPF2 standard interfaces on both sides, offering strong hardware compatibility and direct connection to  Arduino, micro:bit, and ICBricks 2.0, enabling rapid expansion and interaction. Users can intuitively switch working modes and communication protocols via the rotary switch on the top of the module, making operation simple and efficient, greatly reducing debugging and usage barriers. It is suitable for AI education, intelligent robotics, and IoT visual projects, among various application scenarios.
 
 
 ## Structure
@@ -35,7 +35,7 @@ The AI Vision Sensor features a built-in K210 and ESP32‑S3 dual-core processor
 | Weight   |  28 ± 1 g   |
 | Control Chips |  Kendryte K210 + ESP32-S3   |
 | Camera | 2-megapixel camera |
-| Communication Interface | I²C / UART / SPIKE |
+| Communication Interface | I²C / UART  |
 | I²C Rate   | 100 kbps |
 | UART Baud Rate | 115200 |
 | Operating Temperature | 0 – 50 ℃ |
